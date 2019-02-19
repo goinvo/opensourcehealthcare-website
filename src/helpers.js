@@ -14,6 +14,37 @@ export function formatDate(date) {
   return `${day}.${month}.${year}`
 }
 
+export function extractArticleDataFromQuery(data) {
+  return data.allMdx.edges.map(edge => {
+    return {
+      slug: edge.node.parent.name,
+      ...edge.node.frontmatter,
+    }
+  })
+}
+
+export function findArticleById(data, id) {
+  return data.allMdx.edges.find(({ node }) => {
+    return node.id === id
+  }).node
+}
+
+export function extractArticleLinkDetails(item) {
+  const link = item.slug ? `/work/${item.slug}` : item.link
+  const externalLink = item.slug
+    ? false
+    : item.link.includes('/vision/')
+      ? false
+      : true
+  const suppressNewTab = item.external ? false : true
+
+  return {
+    link,
+    externalLink,
+    suppressNewTab,
+  }
+}
+
 export function debounce(func, wait, immediate) {
   var timeout
   return function() {

@@ -4,22 +4,23 @@ import { MDXProvider } from '@mdx-js/tag'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import Helmet from 'react-helmet'
 
-import Layout from './layout'
-import Image from '../image'
-import Hero from '../hero'
-import Columns from '../columns'
-import Card from '../card'
-import ImageBlock from '../image-block'
-import References from '../references'
+import Layout from 'layout'
+//import Image from 'image'
+//import Hero from './hero'
+//import Columns from './columns'
+//import Card from './card'
+//import ImageBlock from './image-block'
+//import References from './references'
 
 import {
+  extractArticleDataFromQuery,
   extractArticleLinkDetails,
-  concatArticles,
-  findArticlesById,
+  //concatArticles,
+  findArticleById,
   mediaUrl,
-} from '../../helpers'
+} from '../helpers'
 
-import config from '../../../config'
+import config from '../../config'
 
 class ArticleLayout extends Component {
   render() {

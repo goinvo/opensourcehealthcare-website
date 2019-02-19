@@ -1,0 +1,29 @@
+body {
+  font-family: $font-family-default;
+  font-size: $font-size--base;
+  line-height: $line-height--base;
+  color: $color-black;
+}
+
+.text {
+  &--red {
+    color: $color-red;
+  }
+}
+
+a {
+  color: $color-red;
+}
+
+h1 {
+  font-size: $header--xl;
+  font-weight: $font-weight--bold;
+}
+h2 {
+  font-size: $header--xl;
+  font-weight: $font-weight--normal;
+}
+h3 {
+  font-size: $header--sm;
+  font-weight: $font-weight--bold;
+}

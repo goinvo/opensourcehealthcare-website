@@ -1,0 +1,15 @@
+// These values should be in sync with config in src/rework-pure-grids.js
+// and config.js
+$breakpoint--sm: 35.5em;
+$breakpoint--md: 48em;
+$breakpoint--lg: 54em;
+$breakpoint--xl: 80em;
+
+$mq-breakpoints: (
+  small: $breakpoint--sm,
+  medium: $breakpoint--md,
+  large: $breakpoint--lg,
+  extra-large: $breakpoint--xl,
+);
+
+$mq-base-font-size: $font-size--base !default;

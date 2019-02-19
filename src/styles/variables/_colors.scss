@@ -1,0 +1,21 @@
+ $color-white: #fff;
+ $color-black: #131313;
+ $color-gray: #3F4444;
+ $color-gray--dark: #5D6666;
+ $color-gray--light: #F9F9FA;
+ $color-red: #BD3830;
+ $color-red--light: #FF7970;
+
+ $color-primary: $color-red;
+
+ .background {
+   &--gray-dark {
+     background: $color-gray--dark;
+   }
+   &--gray-light {
+     background: $color-gray--light;
+   }
+   &--gray-white {
+     background: $color-white;
+   }
+ }

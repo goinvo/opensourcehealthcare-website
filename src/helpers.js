@@ -1,4 +1,6 @@
 import config from '../config.js'
+//import generalArticlesOrder from './data/article-general-order.json'
+import spotlightArticlesOrder from './data/article-spotlight-order.json'
 
 export function mediaUrl(path) {
   return `${config.cloudfrontUrl}${path}`
@@ -43,6 +45,20 @@ export function extractArticleLinkDetails(item) {
     externalLink,
     suppressNewTab,
   }
+}
+
+export function concatArticles(
+  spotlightArticles,
+  generalArticles
+) {
+
+  return extractArticleDataFromQuery(articles)
+    .sort((a, b) => {
+      return spotlightArticlesOrder.indexOf(a.slug || a.id) >
+        spotlightArticlesOrder.indexOf(b.slug || b.id)
+        ? 1
+        : -1
+    })
 }
 
 export function debounce(func, wait, immediate) {

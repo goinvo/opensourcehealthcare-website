@@ -44,7 +44,6 @@ class ArticleLayout extends Component {
                     title
                     image
                     author
-                    caption
                     references {
                       title
                       link

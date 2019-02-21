@@ -5,7 +5,7 @@ import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import Helmet from 'react-helmet'
 
 import Layout from './layout'
-import Image from './image'
+//import Image from './image'
 //import Hero from './hero'
 //import Columns from './columns'
 //import Card from './card'
@@ -14,7 +14,7 @@ import Image from './image'
 
 import {
   //extractArticleDataFromQuery,
-  extractArticleLinkDetails,
+  //extractArticleLinkDetails,
   //concatArticles,
   findArticleById,
   //mediaUrl,
@@ -81,13 +81,13 @@ class ArticleLayout extends Component {
                       {children}
                     </ul>
                   ),
-                  img: props => (
-                    <Image
-                      className="image--max-width"
-                      sizes={config.sizes.fullInsideMediumMaxWidth}
-                      {...props}
-                    />
-                  ),
+                  // img: props => (
+                  //   <Image
+                  //     className="image--max-width"
+                  //     sizes={config.sizes.fullInsideMediumMaxWidth}
+                  //     {...props}
+                  //   />
+                  // ),
                 }}
               >
                 <div className="article">

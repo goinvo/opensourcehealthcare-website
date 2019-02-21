@@ -45,9 +45,9 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
           if (!node.frontmatter.hidden) {
             createPage({
-              path: `/work/${node.parent.name}`,
+              path: `/evidence/${node.parent.name}`,
               component: componentWithMDXScope(
-                path.resolve('./src/components/layouts/case-study-layout.js'),
+                path.resolve('./src/components/article.js'),
                 node.code.scope
               ),
               context: { id: node.id },

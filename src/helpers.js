@@ -32,12 +32,9 @@ export function findArticleById(data, id) {
 }
 
 export function extractArticleLinkDetails(item) {
-  const link = item.slug ? `/work/${item.slug}` : item.link
+  const link = item.slug ? `/evidence/${item.slug}` : item.link
   const externalLink = item.slug
-    ? false
-    : item.link.includes('/vision/')
-      ? false
-      : true
+    ? false : true
   const suppressNewTab = item.external ? false : true
 
   return {
@@ -48,11 +45,11 @@ export function extractArticleLinkDetails(item) {
 }
 
 export function concatArticles(
-  spotlightArticles,
-  generalArticles
+  spotlightArticles
+  //generalArticles
 ) {
 
-  return extractArticleDataFromQuery(articles)
+  return extractArticleDataFromQuery(spotlightArticles)
     .sort((a, b) => {
       return spotlightArticlesOrder.indexOf(a.slug || a.id) >
         spotlightArticlesOrder.indexOf(b.slug || b.id)

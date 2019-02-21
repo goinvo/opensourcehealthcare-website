@@ -1,12 +1,71 @@
-import React from "react"
-import { Link } from "gatsby"
+import React, { Component } from 'react'
 
 import Layout from "../components/layout"
+import ArticleCard from '../components/articleCard'
+import spotlightItems from '../data/article-spotlight-order'
 
-const Evidence = () => (
-  <Layout>
-    <p>Points of view from thought leaders and notable OS projects as evidence for the need for OS in healthcare.</p>
-  </Layout>
-)
+import {
+  extractArticleLinkDetails,
+  //concatArticles,
+} from '../helpers'
 
-export default Evidence
+class EvidencePage extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      spotlightItems
+    }
+  }
+
+  render() {
+    return (
+      <Layout>
+        <p>Points of view from thought leaders and notable OS projects as evidence for the need for OS in healthcare.</p>
+
+        <div class="article-section">
+          <h2 className="header-xl">Spotlight</h2>
+
+          {this.state.spotlightItems.map((spotlightArticle, i) => {
+            const {
+              title,
+              author,
+              link,
+            } = extractArticleLinkDetails(spotlightArticle)
+
+            return (
+              <ArticleCard
+                title={spotlightArticle.title}
+                author={spotlightArticle.author}
+                link={spotlightArticle.link}
+              >
+              </ArticleCard>
+            )
+          })}
+
+        </div>
+      </Layout>
+    )}
+}
+
+export const evidencePageQuery = graphql`
+  query EvidenceQuery {
+    allMdx {
+      edges {
+        node {
+          parent {
+            ... on File {
+              name
+            }
+          }
+          frontmatter {
+            author
+            title
+          }
+        }
+      }
+    }
+  }
+`
+
+export default EvidencePage

@@ -43,18 +43,25 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         result.data.allMdx.edges.forEach(({ node }) => {
-          if (!node.frontmatter.hidden) {
             createPage({
-              path: `/evidence/${node.parent.name}`,
+              path: `/articles/${node.parent.name}`,
               component: componentWithMDXScope(
                 path.resolve('./src/components/article.js'),
                 node.code.scope
               ),
               context: { id: node.id },
             })
-          }
+
         })
       })
     )
+  })
+}
+
+exports.onCreateWebpackConfig = ({ actions }) => {
+  actions.setWebpackConfig({
+    resolve: {
+      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
   })
 }

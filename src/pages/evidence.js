@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { graphql } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Layout from "../components/layout"
-import ArticleCard from '../components/articleCard'
+//import ArticleCard from '../components/articleCard'
 import spotlightItems from '../data/article-spotlight-order'
 
 import {
@@ -28,23 +28,26 @@ class EvidencePage extends Component {
 
           {this.state.spotlightItems.map((spotlightArticle, i) => {
             const {
-              link,
-              externalLink,
-              suppressNewTab,
+              //link,
+              //externalLink,
+              //suppressNewTab,
             } = extractArticleLinkDetails(spotlightArticle)
 
             return (
-              <ArticleCard
-                link={link}
-                externalLink={externalLink}
-                suppressNewTab={suppressNewTab}
-                title={spotlightArticle.title}
-                author={spotlightArticle.author}
-              >
-              </ArticleCard>
+              <div className="article-card">
+                <Link to={spotlightArticle.path} className="link" >
+                  <div classname="author">{spotlightArticle.author}</div>
+                  <div classname="title">{spotlightArticle.title}</div>
+                </Link>
+              </div>
+
             )
           })}
 
+        </div>
+
+        <div class="article-section">
+          <h2 className="header-xl">Articles</h2>
         </div>
       </Layout>
     )}

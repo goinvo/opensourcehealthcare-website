@@ -20,7 +20,7 @@ import {
   //mediaUrl,
 } from '../helpers'
 
-import config from '../../config'
+//import config from '../../config'
 
 class ArticleLayout extends Component {
   render() {
@@ -71,6 +71,32 @@ class ArticleLayout extends Component {
               />
               <MDXProvider
                 components={{
+                  h1: ({ children, ...props }) => (
+                    <h1
+                      className="header--xl"
+                      {...props}
+                    >
+                      {children}
+                    </h1>
+                  ),
+                  h2: ({ children, ...props }) => (
+                    <h2
+                      className="header--xl"
+                      {...props}
+                    >
+                      {children}
+                    </h2>
+                  ),
+                  h3: ({ children, ...props }) => (
+                    <h3 className="header--sm" {...props}>
+                      {children}
+                    </h3>
+                  ),
+                  h4: ({ children, ...props }) => (
+                    <h4 className="header--sm" {...props}>
+                      {children}
+                    </h4>
+                  ),
                   p: ({ children, ...props }) => (
                     <p className="margin-bottom--double">
                       {children}

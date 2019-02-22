@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import ArticleCard from '../components/articleCard'
 import spotlightItems from '../data/article-spotlight-order'

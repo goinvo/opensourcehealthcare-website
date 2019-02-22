@@ -46,9 +46,12 @@ exports.createPages = ({ graphql, actions }) => {
         result.data.allMdx.edges.forEach(({ node }) => {
             const path = node.frontmatter.path
             createPage({
-              path,
-              component: articleLayout,
-              context: { path, },
+              path: `/articles/${node.parent.name}`,
+              component: componentWithMDXScope(
+                path.resolve('./src/components/article.js'),
+                node.code.scope
+              ),
+              context: { id: node.id },
             })
 
         })

@@ -29,13 +29,14 @@ class EvidencePage extends Component {
           {this.state.spotlightItems.map((spotlightArticle, i) => {
             const {
               link,
+              path,
               //externalLink,
               //suppressNewTab,
             } = extractArticleLinkDetails(spotlightArticle)
 
             return (
               <div className="article-card" >
-                <Link to={link}>
+                <Link to={path}>
                   <div className="author">{spotlightArticle.author}</div>
                   <div className="title">{spotlightArticle.title}</div>
                 </Link>

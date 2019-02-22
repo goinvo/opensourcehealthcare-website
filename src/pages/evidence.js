@@ -23,21 +23,21 @@ class EvidencePage extends Component {
       <Layout>
         <p>Points of view from thought leaders and notable OS projects as evidence for the need for OS in healthcare.</p>
 
-        <div class="article-section">
+        <div className="article-section">
           <h2 className="header-xl">Spotlight</h2>
 
           {this.state.spotlightItems.map((spotlightArticle, i) => {
             const {
-              //link,
+              link,
               //externalLink,
               //suppressNewTab,
             } = extractArticleLinkDetails(spotlightArticle)
 
             return (
-              <div className="article-card">
-                <Link to={spotlightArticle.path} className="link" >
-                  <div classname="author">{spotlightArticle.author}</div>
-                  <div classname="title">{spotlightArticle.title}</div>
+              <div className="article-card" key={link}>
+                <Link to={link} className="link" >
+                  <div className="author">{spotlightArticle.author}</div>
+                  <div className="title">{spotlightArticle.title}</div>
                 </Link>
               </div>
 
@@ -46,7 +46,7 @@ class EvidencePage extends Component {
 
         </div>
 
-        <div class="article-section">
+        <div className="article-section">
           <h2 className="header-xl">Articles</h2>
         </div>
       </Layout>

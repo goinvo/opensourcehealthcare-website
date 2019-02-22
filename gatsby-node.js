@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
                     scope
                   }
                   frontmatter {
-                    hidden
+                    path
                   }
                 }
               }

@@ -8,8 +8,7 @@ import Layout from './layout'
 //import Image from './image'
 //import Hero from './hero'
 //import Columns from './columns'
-//import Card from './card'
-//import ImageBlock from './image-block'
+//import ArticleCard from './articleCard'
 //import References from './references'
 
 import {

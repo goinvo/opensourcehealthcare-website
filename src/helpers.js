@@ -32,7 +32,7 @@ export function findArticleById(data, id) {
 }
 
 export function extractArticleLinkDetails(item) {
-  const link = item.slug ? `/evidence/${item.slug}` : item.link
+  const link = item.slug ? `/articles/${item.slug}` : item.link
   const externalLink = item.slug
     ? false : true
   const suppressNewTab = item.external ? false : true

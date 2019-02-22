@@ -15,7 +15,7 @@ references:
 
 # Eric Topol
 
-##Open Source Healthcare Q&A
+## Open Source Healthcare Q&A
 
 Eric Topol, MD, is a classically trained clinician who fights for the patient and their rights as the atomic unit of healthcare, made crystal clear with his book “The Patient Will See You Now.”
 

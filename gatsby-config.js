@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Open Source Healthcare Journal`,
+    title: 'Open Source Healthcare Journal',
+    description: 'Innovative open source ideas to change healthcare for the better',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

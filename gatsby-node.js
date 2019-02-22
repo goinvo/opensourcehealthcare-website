@@ -11,6 +11,7 @@ const componentWithMDXScope = require('gatsby-mdx/component-with-mdx-scope')
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   return new Promise((resolve, reject) => {
+    const articleLayout = path.resolve(`src/components/article.js`)
     resolve(
       graphql(
         `
@@ -43,25 +44,15 @@ exports.createPages = ({ graphql, actions }) => {
         }
 
         result.data.allMdx.edges.forEach(({ node }) => {
+            const path = node.frontmatter.path
             createPage({
-              path: `/articles/${node.parent.name}`,
-              component: componentWithMDXScope(
-                path.resolve('./src/components/article.js'),
-                node.code.scope
-              ),
-              context: { id: node.id },
+              path,
+              component: articleLayout,
+              context: { path, },
             })
 
         })
       })
     )
-  })
-}
-
-exports.onCreateWebpackConfig = ({ actions }) => {
-  actions.setWebpackConfig({
-    resolve: {
-      modules: [path.resolve(__dirname, 'src'), 'node_modules'],
-    },
   })
 }

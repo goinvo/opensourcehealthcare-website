@@ -118,7 +118,9 @@ class ArticleLayout extends Component {
               >
                 <div className="article">
 
-                    <MDXRenderer>{article.code.body}</MDXRenderer>
+                    <MDXRenderer>
+                      {article.code.body}
+                    </MDXRenderer>
                   </div>
 
 

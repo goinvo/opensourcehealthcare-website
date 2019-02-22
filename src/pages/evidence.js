@@ -34,8 +34,8 @@ class EvidencePage extends Component {
             } = extractArticleLinkDetails(spotlightArticle)
 
             return (
-              <div className="article-card" key={link}>
-                <Link to={link} className="link" >
+              <div className="article-card" >
+                <Link to={link}>
                   <div className="author">{spotlightArticle.author}</div>
                   <div className="title">{spotlightArticle.title}</div>
                 </Link>

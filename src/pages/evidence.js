@@ -3,6 +3,7 @@ import { Link, graphql } from 'gatsby'
 import Layout from "../components/layout"
 //import ArticleCard from '../components/articleCard'
 import spotlightItems from '../data/article-spotlight-order'
+import goinvoItems from '../data/article-general-order'
 
 import {
   extractArticleLinkDetails,
@@ -10,13 +11,6 @@ import {
 } from '../helpers'
 
 class EvidencePage extends Component {
-  constructor(props) {
-    super(props)
-
-    this.state = {
-      spotlightItems
-    }
-  }
 
   render() {
     return (
@@ -26,11 +20,9 @@ class EvidencePage extends Component {
         <div className="article-section">
           <h2 className="header-xl">Spotlight</h2>
 
-          {this.state.spotlightItems.map((spotlightArticle, i) => {
+          {spotlightItems.map((spotlightArticle, i) => {
             const {
               link,
-              //externalLink,
-              //suppressNewTab,
             } = extractArticleLinkDetails(spotlightArticle)
 
             return (
@@ -48,6 +40,21 @@ class EvidencePage extends Component {
 
         <div className="article-section">
           <h2 className="header-xl">Articles</h2>
+          {goinvoItems.map((goinvoArticle, i) => {
+            const {
+              link,
+            } = extractArticleLinkDetails(goinvoArticle)
+
+            return (
+              <div className="article-card" >
+                <Link to={link}>
+                  <div className="author">{goinvoArticle.author}</div>
+                  <div className="title">{goinvoArticle.title}</div>
+                </Link>
+              </div>
+
+            )
+          })}
         </div>
       </Layout>
     )}

@@ -1,3 +1,8 @@
 [
-  "qa-eric-topol"
+  {
+    "id": "qa-eric-topol",
+    "title": "Open Source Healthcare Q&A",
+    "link": "/articles/qa-eric-topol",
+    "author": "Eric Topol"
+  }
 ]

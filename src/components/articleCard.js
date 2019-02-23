@@ -10,10 +10,10 @@ class ArticleCard extends Component {
     } = this.props
 
     return (
-      <div className="article-card">
+      <div className="article-card" >
         <Link to={link}>
-          <div classname="author">{author}</div>
-          <div classname="title">{title}</div>
+          <div className="author">{author}</div>
+          <div className="title">{title}</div>
         </Link>
       </div>
     )

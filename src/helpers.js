@@ -16,46 +16,10 @@ export function formatDate(date) {
   return `${day}.${month}.${year}`
 }
 
-export function extractArticleDataFromQuery(data) {
-  return data.allMdx.edges.map(edge => {
-    return {
-      slug: edge.node.parent.name,
-      ...edge.node.frontmatter,
-    }
-  })
-}
-
 export function findArticleById(data, id) {
   return data.allMdx.edges.find(({ node }) => {
     return node.id === id
   }).node
-}
-
-export function extractArticleLinkDetails(spotlightArticle) {
-  const link = spotlightArticle.slug ? `/articles/${spotlightArticle.slug}` : spotlightArticle.link
-  const externalLink = spotlightArticle.slug
-    ? false : true
-  const suppressNewTab = spotlightArticle.external ? false : true
-
-  return {
-    link,
-    externalLink,
-    suppressNewTab,
-  }
-}
-
-export function concatArticles(
-  spotlightArticles
-  //generalArticles
-) {
-
-  return extractArticleDataFromQuery(spotlightArticles)
-    .sort((a, b) => {
-      return spotlightArticlesOrder.indexOf(a.slug || a.id) >
-        spotlightArticlesOrder.indexOf(b.slug || b.id)
-        ? 1
-        : -1
-    })
 }
 
 export function debounce(func, wait, immediate) {

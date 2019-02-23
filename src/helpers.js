@@ -31,11 +31,11 @@ export function findArticleById(data, id) {
   }).node
 }
 
-export function extractArticleLinkDetails(item) {
-  const link = item.slug ? `/articles/${item.slug}` : item.link
-  const externalLink = item.slug
+export function extractArticleLinkDetails(spotlightArticle) {
+  const link = spotlightArticle.slug ? `/articles/${spotlightArticle.slug}` : spotlightArticle.link
+  const externalLink = spotlightArticle.slug
     ? false : true
-  const suppressNewTab = item.external ? false : true
+  const suppressNewTab = spotlightArticle.external ? false : true
 
   return {
     link,

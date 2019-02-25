@@ -2,11 +2,14 @@
   padding: 20px;
   display: inline-block;
   width: 100%;
-  a {
+  &__link {
     padding-right: 20px;
     font-weight: $font-weight--bold;
     color:  $color-black;
     text-decoration: none;
+    &--active {
+      color:  $color-red;
+    }
   }
 }
 .menu-toggle {
@@ -49,7 +52,7 @@
   .mobile-nav {
     //border: solid blue 1px;
     margin-bottom: auto;
-
+    margin-top: 50px;
 
     ul {
       list-style: none;
@@ -59,7 +62,7 @@
       padding: 20px 0;
       width: 100%;
     }
-    a {
+    &__link {
       padding: 10px;
       width: 100%;
       //border: solid red 1px;
@@ -67,6 +70,12 @@
       color: $color-white;
       font-size: $header--xl;
       font-weight: $font-weight--bold;
+      &--active {
+          border-bottom: $color-gray--border solid 1px;
+          border-left: $color-red solid 5px;
+          border-right: $color-red solid 5px;
+          margin-left: -5px;
+      }
     }
     .contact-link {
       //border: solid blue 1px;

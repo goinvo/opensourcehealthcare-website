@@ -1,25 +1,39 @@
+import React, { Component } from 'react'
 import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header>
-    <div className="header-nav">
-      <Link to="/mission/">Mission</Link>
-      <Link to="/evidence/">Evidence</Link>
-    </div>
-    <div className="menu">
+class Header extends Component {
 
-    </div>
-  </header>
-)
+  render() {
+    const navItems = [
+      { link: '/', title: 'Home', class: 'hidden--until-lg' },
+      { link: '/mission/', title: 'Mission' },
+      { link: '/evidence/', title: 'Evidence' },
+      { link: '/take-action/', title: 'Take action', class: 'hidden--until-lg' },
+      { link: '/contact/', title: 'Get in touch', class: 'hidden--until-lg' },
+      { link: '/download/', title: 'Download PDF', class: 'hidden--until-lg' },
+    ]
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+    return (
+      <header>
+        <div className="header-nav">
+          {navItems.map(navItem => {
+            return (
+              <Link
+                key={navItem.link}
+                to={navItem.link}
+                className={`header-nav__link ${navItem.class}`}
+                activeClassName="header-nav__link--active"
+              >
+                {navItem.title}
+              </Link>
+            )
+          })}
+        </div>
+        <button className="menu-toggle"></button>
 
-Header.defaultProps = {
-  siteTitle: ``,
+      </header>
+    )
+  }
 }
 
 export default Header

@@ -11,10 +11,8 @@ class Layout extends Component {
   render() {
     const frontmatter = Object.assign(
       {
-        metaTitle:
-          'Open Source Healthcare Journal',
-        metaDescription:
-          'The Open Source Healthcare Journal is a publication advocating innovative open source ideas to change healthcare for the better.',
+        metaTitle: 'Open Source Healthcare Journal',
+        metaDescription: 'The Open Source Healthcare Journal is a publication advocating innovative open source ideas to change healthcare for the better.',
         heroImage: '/images/homepage/oshc-hero.jpg',
       },
       this.props.frontmatter

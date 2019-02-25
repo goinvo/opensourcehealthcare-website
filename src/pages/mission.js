@@ -5,8 +5,10 @@ import Layout from "../components/layout"
 
 const Mission = () => (
   <Layout>
-    <h1>We live in a closed healthcare system,</h1>
-    <p>We demand that out healthcare services be open</p>
+    <div className="max-width content-padding pad-vertical pad-top--double">
+      <h1>We live in a closed healthcare system,</h1>
+      <p>We demand that out healthcare services be open</p>
+    </div>
   </Layout>
 )
 

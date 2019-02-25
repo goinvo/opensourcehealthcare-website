@@ -9,6 +9,12 @@ body {
   &--red {
     color: $color-red;
   }
+  &--bold {
+    font-weight: $font-weight--bold;
+  }
+  &--center {
+    text-align: center;
+  }
 }
 
 a {

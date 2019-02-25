@@ -9,6 +9,9 @@ body {
   &--red {
     color: $color-red;
   }
+  &--red-light {
+    color: $color-red--light;
+  }
   &--white {
     color: $color-white;
   }
@@ -22,11 +25,27 @@ body {
 
 a {
   color: $color-red;
+  text-decoration: none;
 }
 
+h1, h2, h3 {
+  &.mobile-squish {
+    @include mq($until: medium) {
+      width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.header-xl {
+    font-size: $header--xl;
+    font-weight: $font-weight--bold;
+    line-height: $line-height--xl;
+  }
+}
 h1 {
   font-size: $header--xl;
   font-weight: $font-weight--bold;
+  line-height: $line-height--xl;
 }
 h2 {
   font-size: $header--xl;

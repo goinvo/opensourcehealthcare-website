@@ -24,6 +24,9 @@ header {
 footer {
 	background: $color-gray--dark;
 	color: #fff;
+	a {
+		color: $color-red--light;
+	}
 }
 
 .max-width {

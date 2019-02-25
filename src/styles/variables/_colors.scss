@@ -20,4 +20,8 @@
    &--gray-white {
      background: $color-white;
    }
+   &--dark-gradient {
+     background: linear-gradient(to bottom, #ffffff 0%,#4f5050 35%,#242929 99%);
+     color: $color-white;
+   }
  }

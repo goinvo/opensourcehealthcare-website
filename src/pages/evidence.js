@@ -10,32 +10,34 @@ class EvidencePage extends Component {
   render() {
     return (
       <Layout>
-        <p>Points of view from thought leaders and notable OS projects as evidence for the need for OS in healthcare.</p>
+        <div className="max-width content-padding pad-vertical pad-top--double header-padding">
+          <p>Points of view from thought leaders and notable OS projects as evidence for the need for OS in healthcare.</p>
 
-        <div className="article-section">
-          <h2 className="header-xl">Spotlight</h2>
-          {spotlightItems.map((spotlightArticle, i) => {
-            return (
-              <ArticleCard
-                link={spotlightArticle.link}
-                author={spotlightArticle.author}
-                title={spotlightArticle.title}>
-              </ArticleCard>
-            )
-          })}
-        </div>
+          <div className="article-section">
+            <h2 className="header-xl">Spotlight</h2>
+            {spotlightItems.map((spotlightArticle, i) => {
+              return (
+                <ArticleCard
+                  link={spotlightArticle.link}
+                  author={spotlightArticle.author}
+                  title={spotlightArticle.title}>
+                </ArticleCard>
+              )
+            })}
+          </div>
 
-        <div className="article-section">
-          <h2 className="header-xl">Articles</h2>
-          {goinvoItems.map((goinvoArticle, i) => {
-            return (
-              <ArticleCard
-                link={goinvoArticle.link}
-                author={goinvoArticle.author}
-                title={goinvoArticle.title}>
-              </ArticleCard>
-            )
-          })}
+          <div className="article-section">
+            <h2 className="header-xl">Articles</h2>
+            {goinvoItems.map((goinvoArticle, i) => {
+              return (
+                <ArticleCard
+                  link={goinvoArticle.link}
+                  author={goinvoArticle.author}
+                  title={goinvoArticle.title}>
+                </ArticleCard>
+              )
+            })}
+          </div>
         </div>
       </Layout>
     )}

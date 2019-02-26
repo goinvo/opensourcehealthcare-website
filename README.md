@@ -1,96 +1,120 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# opensourcehealthcare.org
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+A static site for opensourcehealthcare.org built using [GatsbyJS](https://www.gatsbyjs.org/).
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+## Getting started
 
-## 🚀 Quick start
+_NOTE:_ To work in this project, it is assumed you have basic familiarity with using the command line and Git/GitHub. If you are not comfortable with these tools, please reach out to a coworker for some help.
 
-1.  **Create a Gatsby site.**
+_MORE NOTE:_ When copy/pasting the examples, do not include the `$`. This is used to represent your command line prompt, showing individual commands on new lines.
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+_MANY NOTE:_ You may be required to install additional dependencies like XCode command line tools on Mac.
 
-    ```sh
-    # create a new Gatsby site using the default starter
-    npx gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+### Install Node
 
-1.  **Start developing.**
+This project uses [NodeJS](https://nodejs.org/en/) at its core.
 
-    Navigate into your new site’s directory and start it up.
+```bash
+$ brew update
+$ brew install node
+```
 
-    ```sh
-    cd my-default-starter/
-    gatsby develop
-    ```
+### Clone repository
 
-1.  **Open the source code and start editing!**
+Use the command line or your GitHub app to clone this project repository to your machine. When using the command line, make sure you're already in the folder you want the project downloaded to.
 
-    Your site is now running at `http://localhost:8000`!
+```bash
+$ git clone https://github.com/goinvo/opensourcehealthcare.git
+```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+### Install project dependencies
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+```bash
+$ cd opensourcehealthcare
+$ npm install
+```
 
-## 🧐 What's inside?
+### Start it up
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+```bash
+$ develop
+```
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+Or if you've already set up your environment to work with yarn, you can use
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+```bash
+$ yarn develop
+```
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+Give it a few seconds, and then head on over to [http://localhost:8000/](http://localhost:8000/) and you should see your instance of the working website.
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+## Working with images
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+### Preparing your images
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+Export your image (Photoshop example steps):
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+- Make sure your image is at 72 dpi, and 2000px wide
+- Select 'File' > 'Save As'.
+- Name the image appropriately using all lowercase letters, numbers, and dashes (that means don't use uppercase or underscores, etc).
+- Use the 'JPEG' format (or 'PNG' if transparency is required), and click 'Save'.
+- Use 'Progressive' Format option with 3 scans, or 'interlaced' if PNG.
+- Aim for a file size less than 1M, ideally around 500KB or less
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+## Adding an article
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+First and foremost, remember to make a new branch in Git. It is reasonable to name it something like `article-<name>`.
 
-9.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+## Make a new file
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+Once you're set up on a new branch, make a new Markdown file in the `src/articles` folder. Name the file with all lower-case letters and hyphens, with the `.md` extension. The convention is to use the article name (e.g. `billion-dollar-paywalls.md`). It's fine if the name is a bit long, but also probably best to not go crazy on it, keep in mind that the name is used in the URL as the path to that article, so it should be concise and optimized for search engines.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+### Add the frontmatter
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+Inside the file, the first thing to do is add the frontmatter at the very top of the file. This is meta data associated with the case study, used throughout the rest of the website. It must be at the top and include the `---` syntax, as shown below:
 
-## 🎓 Learning Gatsby
+```md
+---
+title: 'Open Source Healthcare Q&A'
+image: '/images/articles/open-source-qa-topol/hero.jpg'
+author: 'Eric Topol'
+upNext:
+  - 'patient-payer-consumer-citizen'
+  - 'estonian-healthcare-system'
+  - 'open-first-health-policy'
+hidden: false
+metaDescription: ''
+references:
+  - title: 'Reference Title'
+    link: 'https://www.goinvo.com/features/determinants-of-health/'
+---
+```
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
+You can also look at other existing articles as examples.
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
+Let's break down the fields:
 
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
+1. `title` (required)
+   This is the title that will be shown on cards throughout the _rest_ of the site, not necessarily the title shown on the case study page (you'll make than with an h1 or `#` in Markdown).
+2. `image` (required)
+   The path to the image on Dropbox to be used as the hero and the card image on other pages.
+3. `author` (required)
+   The author of the article.
+4. `upNext` (required)
+   A YAML array of ID's associated with other articles to link to at the bottom of the page. The ID is simply the filename of the case study you'd like to link to without the extension. See the example above.
+5. `hidden`
+   Controls whether the case study should show up as a page and be included in lists of articles throughout the site. Set to `true` if this article is a work in progress. Keep in mind that even though it will be hidden from the site, this content is still publicly accessible on GitHub, so never include any content that we don't have author and editor approval on.
+9. `metaDescription` (not required, but you should really include this)
+   A concise summary of the article, usually only a sentence or two long, used for search engines and link details. For more information, read [how to create the right meta description](https://yoast.com/meta-descriptions/).
 
-## 💫 Deploy
+_NOTE:_ If you don't include required frontmatter fields, the app may crash.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+### Viewing your article as you develop content
 
-<!-- AUTO-GENERATED-CONTENT:END -->
+When you add a new markdown file, it is necessary to restart your development server. Use `ctrl + c` to kill your process then start it up again with ` develop`. This will add your new markdown file in the list of case studies. The article you're working on will become accessible at `http://localhost:8000/articles/<filename>` (filename without `.md` file extension).
+
+### Add the content
+
+For the most part, just write plain old Markdown. If you're unfamiliar with Markdown, it's a very basic programming language, designed to make writing content a breeze. Read up on the syntax [here](https://daringfireball.net/projects/markdown/syntax).
+
+Each page should have exactly one `h1` title, written with markdown using `#` (e.g. `# This is the title`). Subsequent sections can get `h2` (`##`), `h3` (`###`), and so on.

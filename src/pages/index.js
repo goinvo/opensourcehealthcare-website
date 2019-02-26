@@ -11,7 +11,7 @@ const IndexPage = () => (
         <div class="top">
           <h1 className="text--center mobile-squish">We demand <span className="text--red">open source</span> healthcare</h1>
           <h2 className="text--center mobile-squish header-xl">We must set healthcare free</h2>
-          <Link to="/page-2/">Check out the Open Source Healthcare journal</Link>
+          <Link to="/downloads/open-source-healthcare-journal.pdf" target="_blank" rel="noopener">Check out the Open Source Healthcare journal</Link>
         </div>
 
         <div class="mission">
@@ -27,7 +27,6 @@ const IndexPage = () => (
         </div>
       </div>
 
-      <Link to="/page-2/">Go to page 2</Link>
     </div>
   </Layout>
 )

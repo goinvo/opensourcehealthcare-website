@@ -37,6 +37,29 @@ module.exports = {
       },
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-mdx`,
+      options: {
+        gatsbyRemarkPlugins: [
+        {
+          resolve: "gatsby-remark-images",
+          options: {
+            maxWidth: 1035,
+            sizeByPixelDensity: true
+          }
+        }
+        ]
+      }
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
       resolve: 'gatsby-plugin-react-svg',
       options: {
         rule: {

@@ -13,6 +13,7 @@ references:
     link: 'https://www.goinvo.com/features/determinants-of-health/'
 ---
 
+![my image](./oshc-jounrla-home.png)
 
 # Eric Topol
 

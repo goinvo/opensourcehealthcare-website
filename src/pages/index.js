@@ -15,7 +15,6 @@ const IndexPage = () => (
         </div>
 
         <div class="mission">
-          <Img fluid={data.fileName.childImageSharp.fluid} />
           <h4>Open Source (OS) Software is</h4>
           <p>something that anyone can change and share, because it’s publicly available under a generous license. While it first began with computer code, open source now influences how projects and businesses work, and our lives benefit from this open sharing. Open source has grown into a way of participating with many others that asks for transparency, community-based collaboration, and meritocracy. The best ideas float to the top, and you earn trust by what you do and how you amplify the group.</p>
           <p>Our internet is infused with open source ideas and services &mdash; from how cell phones communicate, to how e-mail is directed from one person to the next, to Linux. All of these technologies working together are the operating system of the internet.</p>

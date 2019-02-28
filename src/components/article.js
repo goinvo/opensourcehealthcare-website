@@ -3,7 +3,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/tag'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import Helmet from 'react-helmet'
-import Img from "gatsby-image"
 
 import Layout from './layout'
 //import Image from './image'

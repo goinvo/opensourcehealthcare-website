@@ -2,10 +2,10 @@ import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/tag'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
+import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 
 import Layout from './layout'
-//import Image from './image'
 //import Hero from './hero'
 //import Columns from './columns'
 //import ArticleCard from './articleCard'
@@ -106,21 +106,22 @@ class ArticleLayout extends Component {
                       {children}
                     </ul>
                   ),
-                  // img: props => (
-                  //   <Image
-                  //     className="image--max-width"
-                  //     sizes={config.sizes.fullInsideMediumMaxWidth}
-                  //     {...props}
-                  //   />
-                  // ),
+                  img: props => (
+                    <Img
+                      className="image--max-width"
+                      sizes={`${article.frontmatter.image}`}
+                      {...props}
+                    />
+                  ),
                 }}
               >
                 <div className="article">
+                  <Img sizes={`${article.frontmatter.image}`}/>
 
-                    <MDXRenderer>
-                      {article.code.body}
-                    </MDXRenderer>
-                  </div>
+                  <MDXRenderer>
+                    {article.code.body}
+                  </MDXRenderer>
+                </div>
 
 
               </MDXProvider>

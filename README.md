@@ -37,7 +37,7 @@ $ npm install
 ### Start it up
 
 ```bash
-$ develop
+$ npm run develop
 ```
 
 Or if you've already set up your environment to work with yarn, you can use

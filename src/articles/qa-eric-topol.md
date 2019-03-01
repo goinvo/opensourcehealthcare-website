@@ -1,6 +1,6 @@
 ---
 title: 'Open Source Healthcare Q&A'
-image: ''
+image: '/images/oshc-journal-home.jpg'
 author: 'Eric Topol'
 upNext:
   - ''

@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/tag'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
-import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 
 import Layout from './layout'
@@ -12,14 +11,9 @@ import Layout from './layout'
 //import References from './references'
 
 import {
-  //extractArticleDataFromQuery,
-  //extractArticleLinkDetails,
-  //concatArticles,
   findArticleById,
-  //mediaUrl,
 } from '../helpers'
 
-//import config from '../../config'
 
 class ArticleLayout extends Component {
   render() {
@@ -41,8 +35,8 @@ class ArticleLayout extends Component {
                   }
                   frontmatter {
                     title
-                    image
                     author
+                    hero
                     references {
                       title
                       link
@@ -56,10 +50,6 @@ class ArticleLayout extends Component {
           }
         `}
         render={data => {
-          // const articleList = concatArticles(
-          //   data,
-          //   false
-          // )
           const article = findArticleById(data, this.props.pageContext.id)
 
           return (
@@ -106,23 +96,14 @@ class ArticleLayout extends Component {
                       {children}
                     </ul>
                   ),
-                  img: props => (
-                    <Img
-                      className="image--max-width"
-                      sizes={`${article.frontmatter.image}`}
-                      {...props}
-                    />
-                  ),
                 }}
               >
                 <div className="article">
-                  <Img sizes={`${article.frontmatter.image}`}/>
 
                   <MDXRenderer>
                     {article.code.body}
                   </MDXRenderer>
                 </div>
-
 
               </MDXProvider>
             </Layout>

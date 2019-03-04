@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
-
+      <div className="hero hero--home"></div>
       <div className="background--dark-gradient">
         <div className="max-width content-padding pad-vertical pad-top--double header-padding">
         <div class="top">

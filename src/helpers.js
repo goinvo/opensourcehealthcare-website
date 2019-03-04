@@ -1,6 +1,4 @@
 import config from '../config.js'
-//import generalArticlesOrder from './data/article-general-order.json'
-import spotlightArticlesOrder from './data/article-spotlight-order.json'
 
 export function mediaUrl(path) {
   return `${config.cloudfrontUrl}${path}`

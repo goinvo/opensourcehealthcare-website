@@ -99,10 +99,19 @@ class ArticleLayout extends Component {
                 }}
               >
                 <div className="article">
+                  <div className="article-hero-container header-padding">
+                    <div className="article-hero"></div>
+                  </div>
 
-                  <MDXRenderer>
-                    {article.code.body}
-                  </MDXRenderer>
+                  <div className="max-width content-padding pad-vertical">
+                    <h1 className="article-author">{article.frontmatter.author}</h1>
+                    <h2 className="article-title header-xl">{article.frontmatter.title}</h2>
+                    <div className="article-content">
+                      <MDXRenderer>
+                        {article.code.body}
+                      </MDXRenderer>
+                    </div>
+                  </div>
                 </div>
 
               </MDXProvider>

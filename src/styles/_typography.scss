@@ -21,6 +21,10 @@ body {
   &--center {
     text-align: center;
   }
+  &--sm {
+    font-size: $font-size--sm;
+    line-height: 1rem;
+  }
 }
 
 a {
@@ -29,9 +33,16 @@ a {
 }
 
 h1, h2, h3 {
-  &.mobile-squish {
+  &.mobile-squish-sm {
     @include mq($until: medium) {
       width: 200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  &.mobile-squish-md {
+    @include mq($until: medium) {
+      width: 250px;
       margin-left: auto;
       margin-right: auto;
     }

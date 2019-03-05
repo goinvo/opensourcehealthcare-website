@@ -1,0 +1,19 @@
+$border-radius-btn: 2px;
+
+.button-container {
+  position: relative;
+  width: 100%;
+}
+button, .button {
+  box-sizing: border-box;
+  display: block;
+  padding: 10px 30px;
+  margin: 0 auto;
+  border: solid 2px $color-black;
+  border-radius: $border-radius-btn;
+  color: $color-black;
+  font-weight: $font-weight--bold;
+  text-align: center;
+  text-decoration: none;
+  max-width: 250px;
+}

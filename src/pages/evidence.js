@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 import Layout from "../components/layout"
 import ArticleCard from '../components/articleCard'
 import spotlightItems from '../data/article-spotlight-order'
@@ -38,6 +38,18 @@ class EvidencePage extends Component {
               )
             })}
           </div>
+
+          <div className="download-section">
+            <h2 className="header-xl text--center">Get your Open Source Healthcare journal here</h2>
+            <div class="button-container"><Link to="/contact/" className="button button--primary">Download 25MB PDF</Link></div>
+            <div class="button-container"><Link to="/contact/" className="button">Buy $12 Blurb book</Link></div>
+          </div>
+
+          <div className="link-section link-section--evidence">
+            <h2 className="header-xl text--center">Work with us towards the open source future.</h2>
+            <div class="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+          </div>
+
         </div>
       </Layout>
     )}

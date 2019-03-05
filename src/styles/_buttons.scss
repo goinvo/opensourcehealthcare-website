@@ -8,7 +8,7 @@ button, .button {
   box-sizing: border-box;
   display: block;
   padding: 10px 30px;
-  margin: 0 auto;
+  margin: 10px auto;
   border: solid 2px $color-black;
   border-radius: $border-radius-btn;
   color: $color-black;
@@ -16,4 +16,9 @@ button, .button {
   text-align: center;
   text-decoration: none;
   max-width: 250px;
+
+  &--primary {
+    background: $color-black;
+    color: $color-white;
+  }
 }

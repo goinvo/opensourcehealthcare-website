@@ -1,0 +1,28 @@
+.article-section {
+  padding: 20px 0;
+  h2 {
+      padding-bottom: 5px;
+      border-bottom: solid 2px $color-gray--border;
+      margin-bottom: 0;
+  }
+}
+.article-card {
+  font-weight: $font-weight--bold;
+  padding: 20px 0;
+  border-bottom: solid 2px $color-gray--border-light;
+  .title { color: $color-black;}
+}
+
+.download-section {
+  display: block;
+  padding: 30px 0;
+  border-bottom: solid 2px  $color-gray--border;
+  background-image: url("../images/oshc-journal-home.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.link-section--evidence {
+  margin: 80px 0;
+}

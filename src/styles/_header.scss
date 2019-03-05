@@ -97,30 +97,32 @@
   }
 }
 
-.top {
-  top: 0;
-  background: transparent;
-}
 .hero-container {
   position: relative;
-  display: block;
   width: 100%;
   height: 500px;
-  overflow: none;
+  z-index: -2;
   .hero {
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 500px;
-    &--fixed {
-        background-attachment: fixed;
+    min-height: 100%;
+    height: auto;
+    @include mq($from: large) {
+      background-size: cover;
+      background-position: center;
     }
-
+    &--fixed {
+      background-attachment: fixed;
+    }
     &--home {
       background-image: url("../images/oshc-journal-home.png");
     }
     &--mission {
       background-image: url("../images/sketch-box.png");
+    }
+    h2 {
+      margin-top: 25vh;
     }
   }
 }

@@ -11,6 +11,9 @@
   padding: 20px;
   display: inline-block;
   width: 100%;
+  @include mq($from: large) {
+    padding-left: 0;
+  }
   &__link {
     padding-right: 20px;
     font-weight: $font-weight--bold;
@@ -123,28 +126,26 @@
     }
     &--home {
       background-image: url("../images/oshc-journal-home.png");
-
       .header-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        border: solid blue 1px;
+        @include mq($from: large) {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: space-between;
+          align-items: baseline;
+          height: 500px;
+        }
       }
       h2 {
         margin-top: 25vh;
       }
       @include mq($from: large) {
         h1, h2 {
-          border: solid red 1px;
-          width: 250px;
+          width: 200px;
           align-self: center;
-        }
-        h1 {
-          justify-content: flex-start;
-        }
-        h2 {
-          justify-content: flex-end;
+          text-align: left;
+          vertical-align: top;
+          margin-top: 0;
         }
       }
     }

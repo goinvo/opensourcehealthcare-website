@@ -40,6 +40,7 @@
   &--open {
     transform: rotate(-135deg);
     transition:all 100ms ease-in;
+    margin-right: 30px;
     svg { fill: $color-white; }
   }
   &:focus { outline: none; }
@@ -53,6 +54,9 @@
   background: $color-black;
   transform: translateX(100%);
   transition:all 200ms ease-in;
+  .mobile-nav {
+    display: none;
+  }
 
   &--open {
     display: flex;
@@ -61,12 +65,19 @@
     background: $color-black;
     transform: translateX(0%);
     transition:all 200ms ease-in;
+
+    .mobile-nav {
+      display: inline-block;
+    }
   }
 
   .mobile-nav {
     margin-bottom: auto;
     margin-top: 50px;
 
+    &__list {
+      padding: 0 40px;
+    }
     ul {
       list-style: none;
       width: 100%;
@@ -90,11 +101,10 @@
       }
     }
     .contact-link {
-      border: solid blue 1px;
       margin-top: auto;
       align-self: flex-end;
       justify-content: flex-end;
-      margin-bottom: 0;
+      margin-top: 80px;
       a {
         font-size: $font-size--base;
         font-weight: $font-weight--normal;

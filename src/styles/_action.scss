@@ -1,0 +1,19 @@
+.principle {
+  margin-top: 20px;
+  .principle-number {
+    height: 28px;
+    width: 30px;
+    padding-top: 2px;
+    border-radius: 20px;
+    background-color: $color-red;
+    color: $color-white;
+    font-weight: $font-weight--bold;
+    text-align: center;
+  }
+  h3 {
+    margin: 5px 0;
+  }
+  p {
+    margin-top: 5px;
+  }
+}

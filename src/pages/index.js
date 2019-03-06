@@ -99,7 +99,7 @@ const IndexPage = () => (
           <li><Link to="/take-action/#principle-8">Health Data as a Public Resource</Link></li>
           <li><Link to="/take-action/#principle-9">Community Engagement</Link></li>
         </ol>
-        <div class="button-container"><Link to="/take-action/" className="button button--primary">Tack action</Link></div>
+        <div class="button-container"><Link to="/take-action/" className="button button--primary">Take action</Link></div>
       </div>
     </div>
 

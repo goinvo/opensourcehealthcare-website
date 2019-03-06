@@ -1,3 +1,12 @@
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 1020px;
+    margin: 0 auto;
+}
+
 .header-nav {
   padding: 20px;
   display: inline-block;
@@ -30,6 +39,7 @@
     transition:all 100ms ease-in;
     svg { fill: $color-white; }
   }
+  &:focus { outline: none; }
 }
 
 .mobile-overlay {
@@ -51,7 +61,6 @@
   }
 
   .mobile-nav {
-    //border: solid blue 1px;
     margin-bottom: auto;
     margin-top: 50px;
 
@@ -66,7 +75,6 @@
     &__link {
       padding: 10px;
       width: 100%;
-      //border: solid red 1px;
       text-decoration: none;
       color: $color-white;
       font-size: $header--xl;
@@ -79,7 +87,7 @@
       }
     }
     .contact-link {
-      //border: solid blue 1px;
+      border: solid blue 1px;
       margin-top: auto;
       align-self: flex-end;
       justify-content: flex-end;
@@ -101,28 +109,47 @@
   position: relative;
   width: 100%;
   height: 500px;
+  max-height: 680px;
   z-index: -2;
   .hero {
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center top;
     width: 100%;
-    min-height: 100%;
     height: auto;
-    @include mq($from: large) {
-      background-size: cover;
-      background-position: center;
-    }
+    max-height: 680px;
     &--fixed {
       background-attachment: fixed;
     }
     &--home {
       background-image: url("../images/oshc-journal-home.png");
+
+      .header-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        border: solid blue 1px;
+      }
+      h2 {
+        margin-top: 25vh;
+      }
+      @include mq($from: large) {
+        h1, h2 {
+          border: solid red 1px;
+          width: 250px;
+          align-self: center;
+        }
+        h1 {
+          justify-content: flex-start;
+        }
+        h2 {
+          justify-content: flex-end;
+        }
+      }
     }
     &--mission {
       background-image: url("../images/sketch-box.png");
-    }
-    h2 {
-      margin-top: 25vh;
     }
   }
 }

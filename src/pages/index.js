@@ -55,7 +55,7 @@ const IndexPage = () => (
     <div className="max-width content-padding pad-vertical">
       <h3>Healthcare is too important to be closed.</h3>
       <p>Our healthcare services need to be open. We are working towards an open source future to drive better healthcare for all.</p>
-      <div class="button-container"><Link to="/mission/" className="button button--primary">See our mission</Link></div>
+      
     </div>
 
     <div className="max-width content-padding pad-vertical">
@@ -76,10 +76,10 @@ const IndexPage = () => (
     <div className="max-width content-padding pad-vertical">
       <div className="editors-home">
         <h3>Editors</h3>
-        <h3 class="text--red">Open EHRs Are Going Global</h3>
+        <h3 className="text--red">Open EHRs Are Going Global</h3>
         <p>Creating, updating, and reconciling medical records is one of the most visible areas where technology has shaped healthcare. While most electronic health record (EHR) systems remain proprietary, over 30 countries now use open source EHRs in some capacity.<a href="#references"><sup>27</sup></a></p>
         <p>Founded in a rich legacy of global initiative to meet shared, human needs, successful open source healthcare IT initiatives are not only taking a hold in the United States <a href="#references"><sup>32</sup></a> but also spreading to many other communities in the world.</p>
-        <div class="button-container"><Link to="/evidence/" className="button button--primary">More evidence</Link></div>
+        <div className="button-container"><Link to="/evidence/" className="button button--primary">More evidence</Link></div>
       </div>
     </div>
 
@@ -99,7 +99,7 @@ const IndexPage = () => (
           <li><Link to="/take-action/#principle-8">Health Data as a Public Resource</Link></li>
           <li><Link to="/take-action/#principle-9">Community Engagement</Link></li>
         </ol>
-        <div class="button-container"><Link to="/take-action/" className="button button--primary">Take action</Link></div>
+        <div className="button-container"><Link to="/take-action/" className="button button--primary">Take action</Link></div>
       </div>
     </div>
 
@@ -118,10 +118,10 @@ const IndexPage = () => (
           </ul>
         </div>
 
-        <div class="projects-chunk">
+        <div className="projects-chunk">
           <h3>Clients</h3>
           <p>AHRQ, HHS, CMS, NIH, California Healthcare Foundation, State of MAssachusetts, MITRE, Walgreens</p>
-          <div class="button-container"><Link to="/contact/" className="button button--primary">Get in touch</Link></div>
+          <div className="button-container"><Link to="/contact/" className="button button--primary">Get in touch</Link></div>
         </div>
 
       </div>

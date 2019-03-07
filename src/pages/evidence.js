@@ -42,13 +42,13 @@ class EvidencePage extends Component {
 
           <div className="download-section">
             <h2 className="header-xl text--center">Get your Open Source Healthcare journal here</h2>
-            <div class="button-container"><Link to="/contact/" className="button button--primary">Download 25MB PDF</Link></div>
-            <div class="button-container"><Link to="/contact/" className="button">Buy $12 Blurb book</Link></div>
+            <div className="button-container"><Link to="/contact/" className="button button--primary">Download 25MB PDF</Link></div>
+            <div className="button-container"><Link to="/contact/" className="button">Buy $12 Blurb book</Link></div>
           </div>
 
           <div className="link-section link-section--evidence">
             <h2 className="header-xl text--center">Work with us towards the open source future.</h2>
-            <div class="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+            <div className="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
           </div>
 
         </div>

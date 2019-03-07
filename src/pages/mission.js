@@ -71,18 +71,18 @@ const Mission = () => (
         <div className="link-section">
           <h2 className="header-xl text--center">See points of view</h2>
           <p className="text--center">from thought leaders and check out notable Open Source (OS) projects</p>
-          <div class="button-container"><Link to="/evidence/" className="button">Evidence</Link></div>
+          <div className="button-container"><Link to="/evidence/" className="button">Evidence</Link></div>
         </div>
         <hr/>
         <div className="link-section">
           <h2 className="header-xl text--center">Find out the organizing principles of OSHC</h2>
-          <div class="button-container"><Link to="/take-action/" className="button">Take action</Link></div>
+          <div className="button-container"><Link to="/take-action/" className="button">Take action</Link></div>
         </div>
         <hr />
         <div className="link-section">
           <h2 className="header-xl text--center">Work with us</h2>
           <p className="text--center">on creatinv an open source future to drive better healthcare for all.</p>
-          <div class="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+          <div className="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
         </div>
       </div>
 

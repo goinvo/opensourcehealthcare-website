@@ -55,7 +55,7 @@ const IndexPage = () => (
     <div className="max-width content-padding pad-vertical">
       <h3>Healthcare is too important to be closed.</h3>
       <p>Our healthcare services need to be open. We are working towards an open source future to drive better healthcare for all.</p>
-      
+
     </div>
 
     <div className="max-width content-padding pad-vertical">
@@ -77,8 +77,8 @@ const IndexPage = () => (
       <div className="editors-home">
         <h3>Editors</h3>
         <h3 className="text--red">Open EHRs Are Going Global</h3>
-        <p>Creating, updating, and reconciling medical records is one of the most visible areas where technology has shaped healthcare. While most electronic health record (EHR) systems remain proprietary, over 30 countries now use open source EHRs in some capacity.<a href="#references"><sup>27</sup></a></p>
-        <p>Founded in a rich legacy of global initiative to meet shared, human needs, successful open source healthcare IT initiatives are not only taking a hold in the United States <a href="#references"><sup>32</sup></a> but also spreading to many other communities in the world.</p>
+        <p>Creating, updating, and reconciling medical records is one of the most visible areas where technology has shaped healthcare. While most electronic health record (EHR) systems remain proprietary, over 30 countries now use open source EHRs in some capacity.<a href="#references"><sup>2</sup></a></p>
+        <p>Founded in a rich legacy of global initiative to meet shared, human needs, successful open source healthcare IT initiatives are not only taking a hold in the United States<a href="#references"><sup>3</sup></a> but also spreading to many other communities in the world.</p>
         <div className="button-container"><Link to="/evidence/" className="button button--primary">More evidence</Link></div>
       </div>
     </div>
@@ -131,9 +131,9 @@ const IndexPage = () => (
       <div className="max-width content-padding pad-vertical">
         <h2 className="header-xl">References</h2>
         <div id="references" className="text--sm">
-          <p>27.
+          <p>1.
             <br/>F. Aminpour, F. Sadoughi and M. Ahamdi, “Utilization of open source electronic health record around the world: A systematic review”, Journal of Research in Medical Sciences : The Official Journal of Isfahan University of Medical Sciences, vol. 19, no. 1, pp. 57-64, 2014.</p>
-          <p>32.
+          <p>2.
             <br/>“Frequently Asked Questions | Medsphere Commercial”, Medsphere, 2018. [Online]. Available: <a href="http://www.medsphere.com/company/frequently-asked-questions" rel="noopener noreferrer" target="_blank">http://www.medsphere.com/company/frequently-asked-questions</a>. [Accessed: 03 Jan 2018].</p>
         </div>
       </div>

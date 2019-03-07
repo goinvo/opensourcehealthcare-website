@@ -31,7 +31,15 @@ a {
   color: $color-red;
   text-decoration: none;
 }
-
+p {
+  line-height: $line-height--base;
+}
+sup {
+  font-size: $font-size--sm;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4rem;
+}
 h1, h2, h3 {
   &.mobile-squish-sm {
     @include mq($until: medium) {

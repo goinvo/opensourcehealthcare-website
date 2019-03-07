@@ -5,12 +5,15 @@ import Layout from "../components/layout"
 
 const Mission = () => (
   <Layout>
-    <div className="hero-container">
-      <div className="max-width content-padding pad-vertical pad-top--double header-padding">
-        <h1 className="text--center">We live in a closed healthcare system</h1>
-        <p className="text--center mobile-squish">We demand that our healthcare services be open.</p>
+    <div className="hero-container hero-container--mission">
+      <div className="hero hero--fixed hero--mission">
+        <div className="max-width content-padding pad-vertical header-padding">
+          <div className="header-container">
+          <h1 className="text--center mobile-squish-md">We live in a closed healthcare system</h1>
+          <p className="text--center mobile-squish-md">We demand that our healthcare services be open.</p>
+          </div>
+        </div>
       </div>
-      <div className=" hero hero--fixed hero--mission z-0"></div>
     </div>
 
     <div className="z-1">
@@ -29,11 +32,11 @@ const Mission = () => (
         <p>Why is open source critical in healthcare?</p>
         <h2 className="header-xl">Open Source is...</h2>
         <h3>A Credo</h3>
-        <p>Open source is a philosophy on how to make and use products. Employing extensive peer review and open evolution of community contributions results in higher-quality and more reliable software.[1] This transparency benefitsprivate organizations as well as the greater public.[2]</p>
+        <p>Open source is a philosophy on how to make and use products. Employing extensive peer review and open evolution of community contributions results in higher-quality and more reliable software.<a href="#references"><sup>1</sup></a> This transparency benefits private organizations as well as the greater public.<a href="#references"><sup>2</sup></a></p>
         <h3>A Collaboration</h3>
-        <p>Several licenses are available to govern the terms of how open source collaboration functions. Being able to cus tomize the level to which product source code, data, or processes are redistributable or modifiable means that the benefits from creating and using open source are available to an extremely wide range of businesses.[2]</p>
+        <p>Several licenses are available to govern the terms of how open source collaboration functions. Being able to customize the level to which product source code, data, or processes are redistributable or modifiable means that the benefits from creating and using open source are available to an extremely wide range of businesses.<a href="#references"><sup>2</sup></a></p>
         <h3>A Form of Citizenship</h3>
-        <p>Open collaboration extends beyond software into communities that share ideas and generate content, both digital and physical.[2] These communities amplify the reputations of their contributors, and create a reservoir of ideas that power open source products.</p>
+        <p>Open collaboration extends beyond software into communities that share ideas and generate content, both digital and physical.<a href="#references"><sup>2</sup></a> These communities amplify the reputations of their contributors, and create a reservoir of ideas that power open source products.</p>
       </div>
 
       <div className="background--dark-gradient-radial">
@@ -46,13 +49,13 @@ const Mission = () => (
         <p>How will OS impact Healthcare?</p>
         <h2 className="header-xl">Open Source will...</h2>
         <h3>Empower interoperability</h3>
-        <p>Without open standards for health information, hundreds of different healthcare IT systems are currently unable to communicate with each other, costing us $77.8 billion per year[25] in the United States alone.</p>
+        <p>Without open standards for health information, hundreds of different healthcare IT systems are currently unable to communicate with each other, costing us $77.8 billion per year<a href="#references"><sup>3</sup></a> in the United States alone.</p>
         <h3>Establish open standards of data</h3>
         <p>Development of non-proprietary healthcare standards will create an incentive for the providers of commercial healthcare IT products to adopt models of compatible data exchange and information systems</p>
         <h3>Allow greater provider benefits</h3>
         <p>Using open standards to improve health information networks and electronic medical record systems will allow patient data to become more portable between healthcare providers than it is today, ensuring more accurate and efficient care for patients. At the same time, having open source software options will free healthcare providers from being locked in with one vendor.</p>
         <h3>Improve patient outcomes</h3>
-        <p>With open source healthcare IT solutions, regions with limited resources that cannot afford expensive proprietary solutions will still have options for quality software to help them deliver quality care.[26] Most importantly, the open source model is consistent with the healthcare philosophy of sharing best practices and innovations in care delivery[25] to improve health &mdash; with benefits for individual patients, as well as the entire population.</p>
+        <p>With open source healthcare IT solutions, regions with limited resources that cannot afford expensive proprietary solutions will still have options for quality software to help them deliver quality care.<a href="#references"><sup>4</sup></a> Most importantly, the open source model is consistent with the healthcare philosophy of sharing best practices and innovations in care delivery<a href="#references"><sup>3</sup></a> to improve health &mdash; with benefits for individual patients, as well as the entire population.</p>
       </div>
 
       <div className="background--dark-gradient-radial">
@@ -94,9 +97,9 @@ const Mission = () => (
               <br/>M. Alsaffar, P. Yellowlees, A. Odor and M. Hogarth, "The State of Open Source Electronic Health Record Projects: A Software Anthropology Study", JMIR Medical Informatics, vol. 5, no. 1, p. e6, 2017.</p>
             <p>2.
               <br/>"Open collaboration", Wikipedia, 2018. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Open_collaboration" rel="noopener noreferrer" target="_blank">https://en.wikipedia.org/wiki/Open_collaboration</a>. [Accessed: 03 Jan 2018].</p>
-            <p>25.
+            <p>3.
               <br/>M. Goulde and M. Holt, Open Source Software: A Primer for Health Care Leaders. Oakland, Calif.: California HealthCare Foundation, 2006.</p>
-            <p>26.
+            <p>4.
               <br/>P. Millard, J. Bru and C. Berger, "Open-source point-of-care electronic medical records for use in resource-limited settings: systematic review and questionnaire surveys", The BMJ, vol. 2, no. 4, p. e000690, 2012.</p>
           </div>
         </div>

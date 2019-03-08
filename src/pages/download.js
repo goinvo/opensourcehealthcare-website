@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import Layout from "../components/layout"
 import DownloadCard from '../components/downloadCard'
 import downloadItems from '../data/downloads-order'
+import MyImage from '../components/myImage'
 
 class DownloadPage extends Component {
 
@@ -25,6 +26,7 @@ class DownloadPage extends Component {
                   link={download.link}
                   linkText={download.linkText}>
                 </DownloadCard>
+
               )
             })}
           </div>

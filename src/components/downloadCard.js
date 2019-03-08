@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby'
 
 import MyImage from './myImage'
+import Download from './downloads'
 
 class DownloadCard extends Component {
   render (){
@@ -16,9 +16,9 @@ class DownloadCard extends Component {
       <div className="download-card-container">
         <div className="download-card">
           <div className="title">{title}</div>
-          <MyImage filename="oshc-journal-home.png" />
+          <MyImage filename={image} />
         </div>
-        <Link to={link} className="button button--primary">{linkText}</Link>
+        <Download downloadPath={link} />
       </div>
     )
   }

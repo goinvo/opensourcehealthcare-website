@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
+import MyImage from './myImage'
+
 class DownloadCard extends Component {
   render (){
     const {
@@ -14,7 +16,7 @@ class DownloadCard extends Component {
       <div className="download-card-container">
         <div className="download-card">
           <div className="title">{title}</div>
-          <div className="image">{image}</div>
+          <MyImage filename="oshc-journal-home.png" />
         </div>
         <Link to={link} className="button button--primary">{linkText}</Link>
       </div>

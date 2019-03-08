@@ -51,7 +51,7 @@ $ nvm install lts/*
 
 ### Install Yarn
 
-Node comes with a package manager, [NPM](https://www.npmjs.com/), by default. However, this project chooses to use [Yarn](https://yarnpkg.com/en/) instead, namely because it's faster and more secure.
+Node comes with a package manager, [NPM](https://www.npmjs.com/), by default. However, this project chooses to use [Yarn](https://yarnpkg.com/en/) instead, namely because it's faster and more secure. Using both npm and yarn can cause some issues.
 
 ```bash
 $ brew install yarn

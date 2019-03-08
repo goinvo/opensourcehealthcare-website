@@ -43,6 +43,8 @@ module.exports = {
         name: 'images',
       },
     },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

@@ -4931,6 +4931,18 @@ gatsby-source-filesystem@^2.0.22:
     valid-url "^1.0.9"
     xstate "^3.1.0"
 
+gatsby-transformer-sharp@^2.1.15:
+  version "2.1.15"
+  resolved "https://registry.yarnpkg.com/gatsby-transformer-sharp/-/gatsby-transformer-sharp-2.1.15.tgz#8310f808a18d390fe9021862595713976acf4e63"
+  integrity sha512-6kSmO5SxZ9RJx5FLtECpzGZeXHcU3HUpz+19L84xM+gCnSsnIVST+uV/chddOPg4QpGOzzIiKv/J0gRbyNf61Q==
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    bluebird "^3.5.0"
+    fs-extra "^7.0.0"
+    potrace "^2.1.1"
+    probe-image-size "^4.0.0"
+    sharp "^0.21.3"
+
 gatsby@^2.0.119:
   version "2.1.20"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-2.1.20.tgz#176e1d6845098d17f21a6d21790414e1d7e0b20c"

@@ -10,6 +10,14 @@ _MORE NOTE:_ When copy/pasting the examples, do not include the `$`. This is use
 
 _MANY NOTE:_ You may be required to install additional dependencies like XCode command line tools on Mac.
 
+### Install Brew
+
+[Homebrew](https://brew.sh/) is an easy way to install the system packages you'll need for this project on Mac.
+
+```bash
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
 ### Install Node
 
 This project uses [NodeJS](https://nodejs.org/en/) at its core.
@@ -17,6 +25,36 @@ This project uses [NodeJS](https://nodejs.org/en/) at its core.
 ```bash
 $ brew update
 $ brew install node
+```
+
+### NVM
+
+You may also find it helpful to use a tool to manage your Node installations. [nvm](https://github.com/creationix/nvm) is a good one. Follow the instructions there to install nvm. The command that looks like `curl -o- <url> | bash`
+
+Then you can check your Node versions with:
+
+```bash
+$ nvm ls
+```
+
+Install the Node version the project wants by running:
+
+```
+$ nvm use
+```
+
+Check for warnings or errors. If you don't have the right version installed, it will give you a command to run, such as:
+
+```
+$ nvm install lts/*
+```
+
+### Install Yarn
+
+Node comes with a package manager, [NPM](https://www.npmjs.com/), by default. However, this project chooses to use [Yarn](https://yarnpkg.com/en/) instead, namely because it's faster and more secure.
+
+```bash
+$ brew install yarn
 ```
 
 ### Clone repository
@@ -31,16 +69,10 @@ $ git clone https://github.com/goinvo/opensourcehealthcare.git
 
 ```bash
 $ cd opensourcehealthcare
-$ npm install
+$ yarn
 ```
 
 ### Start it up
-
-```bash
-$ npm run develop
-```
-
-Or if you've already set up your environment to work with yarn, you can use
 
 ```bash
 $ yarn develop
@@ -48,13 +80,21 @@ $ yarn develop
 
 Give it a few seconds, and then head on over to [http://localhost:8000/](http://localhost:8000/) and you should see your instance of the working website.
 
+### Deployment
+
+```bash
+$ yarn build
+```
+
+When you push to master, netlify will auto-deploy the site.
+
 ## Working with images
 
 ### Preparing your images
 
 Export your image (Photoshop example steps):
 
-- Make sure your image is at 72 dpi, and 2000px wide
+- Make sure your image is at 72 dpi, and at least 2000px wide (especially for 100% width images)
 - Select 'File' > 'Save As'.
 - Name the image appropriately using all lowercase letters, numbers, and dashes (that means don't use uppercase or underscores, etc).
 - Use the 'JPEG' format (or 'PNG' if transparency is required), and click 'Save'.

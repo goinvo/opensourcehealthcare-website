@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { Link } from "gatsby"
+import { Link } from 'gatsby'
+
 import Logo from '../assets/images/logo.inline.svg'
 
 class Header extends Component {

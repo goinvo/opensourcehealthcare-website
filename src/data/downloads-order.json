@@ -3,7 +3,9 @@
     "id": "open-source-healthcare-journal",
     "title": "Open Source Healthcare",
     "image": "oshc-journal-home.png",
-    "link": "open-source-healthcare-journal.pdf",
-    "linkText": "Download 25MB PDF"
+    "downloadLink": "open-source-healthcare-journal.pdf",
+    "downloadLinkText": "Download 25MB PDF",
+    "link": "",
+    "linkText": "$12 Blurb magazine"
   }
 ]

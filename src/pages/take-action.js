@@ -1,12 +1,12 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link, withPrefix } from 'gatsby'
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
 
 const Mission = () => (
   <Layout>
     <div className="hero-container">
-      <div className=" hero hero--fixed hero--action"></div>
+      <div className="hero hero--fixed hero--action"></div>
     </div>
 
     <div className="principles">
@@ -75,7 +75,7 @@ const Mission = () => (
           <p>A national health literacy service drives adoption of health data models and engages the imagination of the public to understand patient rights and health policy.</p>
         </div>
 
-        <div class="button-container"><Link to="/downloads/open-source-healthcare-journal.pdf" className="button">Download PDF</Link></div>
+        <div class="button-container"><Link to="" className="button">Download PDF</Link></div>
       </div>
     </div>
 

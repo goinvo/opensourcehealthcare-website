@@ -32,8 +32,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'articles',
         path: `${__dirname}/src/articles/`,
+        name: 'articles',
       },
     },
     {
@@ -52,6 +52,19 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 970,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-react-svg',
       options: {

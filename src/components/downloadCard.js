@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 import MyImage from './myImage'
-import Download from './downloads'
+import DownloadLink from './downloadLink'
 
 class DownloadCard extends Component {
   render (){
@@ -18,7 +18,7 @@ class DownloadCard extends Component {
           <div className="title">{title}</div>
           <MyImage filename={image} />
         </div>
-        <Download downloadPath={link} />
+        <DownloadLink filename={link} file={link} />
       </div>
     )
   }

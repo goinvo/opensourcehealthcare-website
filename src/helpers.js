@@ -1,7 +1,8 @@
 import config from '../config.js'
+import { withPrefix } from 'gatsby'
 
 export function mediaUrl(path) {
-  return `${config.cloudfrontUrl}${path}`
+  return `${ withPrefix }${path}`
 }
 
 export function formatDate(date) {

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
+import { Link, withPrefix } from 'gatsby'
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
 import DownloadCard from '../components/downloadCard'
-import downloadItems from '../data/downloads-order'
-import MyImage from '../components/myImage'
+import downloadItems from '../data/downloads-order.json'
 
 class DownloadPage extends Component {
 
@@ -16,7 +16,7 @@ class DownloadPage extends Component {
           <p>Own the OS handbook,
             <br/>Write your own OS principles,
             <br/>Share your OS points of view to public.</p>
-
+            <Link to={withPrefix('downloads/open-source-healthcare-journal.pdf')} className="button button--primary" target="_blank" rel="noopener noreferrer">Download</Link>
           <div className="downloads-section">
             {downloadItems.map((download, i) => {
               return (
@@ -24,7 +24,7 @@ class DownloadPage extends Component {
                   title={download.title}
                   image={download.image}
                   link={download.link}
-                  linkText={download.linkText}>
+                  linkText={download.linkText} >
                 </DownloadCard>
 
               )

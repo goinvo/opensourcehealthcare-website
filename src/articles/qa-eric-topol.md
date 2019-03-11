@@ -19,6 +19,8 @@ His Precision Medicine Initiative, funded by NIH, is out to make hyper-personali
 
 ---
 
+![sketch box](/images/sketch_box.png)
+
 "Open source is fundamental. The fact that we don't have open healthcare reflects the deepness of our problem"
 
 ### 1. Put the Patient in the Driver’s Seat
@@ -42,5 +44,3 @@ It'll be interesting to see how Atul Gawande and the crew advances healthcare. Y
 
 ### 5. A Call for Open Source
 I'm a big advocate for open everything, open to the 10th power. I think this is one of the major healthcare system deficiencies. We have to own our data. All of our data. It's hard to access, and even harder to pull the data out from proprietary electronic health records in a usable form. We have anti-open source.
-
-![alt text](/images/sketch_box.png)

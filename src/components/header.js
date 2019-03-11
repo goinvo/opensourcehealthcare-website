@@ -24,7 +24,7 @@ class Header extends Component {
       { link: '/evidence/', title: 'Evidence' },
       { link: '/take-action/', title: 'Take action', class: 'hidden--until-lg' },
       { link: '/contact/', title: 'Get in touch', class: 'hidden--until-lg' },
-      { link: '/download/', title: 'Download PDF', class: 'hidden--until-lg' },
+      { link: '/downloads/', title: 'Download PDF', class: 'hidden--until-lg' },
     ]
 
     return (

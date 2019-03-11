@@ -1,0 +1,10 @@
+.download-card-container {
+  .download-card {
+    box-shadow: 0 0 4px 2px rgba(0,0,0,.2);
+    .title {
+      text-align: center;
+      font-weight: $font-weight--bold;
+      padding: 10px 0;
+    }
+  }
+}

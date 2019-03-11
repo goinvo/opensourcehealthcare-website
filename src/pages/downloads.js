@@ -16,7 +16,7 @@ class DownloadPage extends Component {
           <p>Own the OS handbook,
             <br/>Write your own OS principles,
             <br/>Share your OS points of view to public.</p>
-            <Link to={withPrefix('downloads/open-source-healthcare-journal.pdf')} className="button button--primary" target="_blank" rel="noopener noreferrer">Download</Link>
+
           <div className="downloads-section">
             {downloadItems.map((download, i) => {
               return (
@@ -26,10 +26,11 @@ class DownloadPage extends Component {
                   link={download.link}
                   linkText={download.linkText} >
                 </DownloadCard>
-
               )
             })}
           </div>
+          <Link to={withPrefix('downloads/open-source-healthcare-journal.pdf')} className="button button--primary" target="_blank" rel="noopener noreferrer">Download 25MB PDF</Link>
+          <Link to='http://www.blurb.com/b/8980724-open-source-healthcare-journal' className="button" target="_blank" rel="noopener noreferrer">Buy $12 Blurb book</Link>
 
         </div>
       </Layout>

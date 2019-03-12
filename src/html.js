@@ -12,6 +12,21 @@ export default class HTML extends React.Component {
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-10273473-31"
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-10273473-31');
+          `,
+            }}
+          />
           <link href="https://fonts.googleapis.com/css?family=Poppins:400,700" rel="stylesheet" />
           {this.props.headComponents}
         </head>

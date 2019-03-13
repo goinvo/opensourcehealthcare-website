@@ -1,4 +1,3 @@
-import config from '../config.js'
 import { withPrefix } from 'gatsby'
 
 export function mediaUrl(path) {

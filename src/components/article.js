@@ -3,8 +3,8 @@ import { StaticQuery, graphql } from 'gatsby'
 import { MDXProvider } from '@mdx-js/tag'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import Helmet from 'react-helmet'
-import Img from 'gatsby-image'
-import MyImage from '../components/myImage'
+//import Img from 'gatsby-image'
+//import MyImage from '../components/myImage'
 
 import Layout from './layout'
 //import Hero from './hero'
@@ -97,12 +97,6 @@ class ArticleLayout extends Component {
                     <ul className="ul margin-top--none margin-bottom--double">
                       {children}
                     </ul>
-                  ),
-                  img: props => (
-                    <MyImage
-                      className="image--max-width"
-                      {...props}
-                    />
                   ),
                 }}
               >

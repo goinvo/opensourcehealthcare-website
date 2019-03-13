@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Link, StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 const MyImage = (props) => (
@@ -30,12 +30,10 @@ const MyImage = (props) => (
 
       const imageSizes = image.node.childImageSharp.sizes;
       return (
-
         <Img
           alt={props.alt}
           sizes={imageSizes}
         />
-
       );
     }}
   />

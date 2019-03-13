@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import Layout from '../components/layout'
 import MyImage from '../components/myImage'
-import Columns from '../components/Columns'
 
 import pdf from 'downloads/open-source-healthcare-journal.pdf'
 
@@ -19,7 +18,7 @@ class DownloadPage extends Component {
             <br/>Share your OS points of view to public.</p>
 
           <div className="downloads-section">
-            <Columns columns={3}>
+            <div className="columns__item columns__item--3">
               <div className="download-card-container">
                 <div className="download-card">
                   <div className="title">Open Source Healthcare</div>
@@ -29,7 +28,7 @@ class DownloadPage extends Component {
                 <a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a>
               </div>
 
-            </Columns>
+            </div>
 
           </div>
         </div>

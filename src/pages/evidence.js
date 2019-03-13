@@ -6,6 +6,8 @@ import ArticleCard from '../components/articleCard'
 import spotlightItems from '../data/article-spotlight-order'
 import goinvoItems from '../data/article-general-order'
 
+import pdf from 'downloads/open-source-healthcare-journal.pdf'
+
 class EvidencePage extends Component {
 
   render() {
@@ -42,8 +44,8 @@ class EvidencePage extends Component {
 
           <div className="download-section">
             <h2 className="header-xl text--center">Get your Open Source Healthcare journal here</h2>
-            <div className="button-container"><Link to="/contact/" className="button button--primary">Download 25MB PDF</Link></div>
-            <div className="button-container"><Link to="/contact/" className="button">Buy $12 Blurb book</Link></div>
+            <div className="button-container"><a href={pdf} className="button button--primary" target="_blank" rel="noopener noreferrer">Download 25MB PDF</a></div>
+            <div className="button-container"><a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a></div>
           </div>
 
           <div className="link-section link-section--evidence">

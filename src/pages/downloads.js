@@ -26,24 +26,24 @@ class DownloadPage extends Component {
                   <MyImage filename="oshc-journal-home.png" />
                 </div>
                 <a href={pdf} className="button" target="_blank" rel="noopener noreferrer">Download 25MB PDF</a>
-                <a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb magazine</a>
+                <a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a>
               </div>
 
-              <div className="download-card-container">
-                <div className="download-card">
-                  <div className="title"><span className="text--red">Nine Organizing Principles</span> of Open Source Healthcare</div>
-                  <MyImage filename="oshc-journal-home.png" />
-                </div>
-                <a href="" className="button" target="_blank" rel="noopener noreferrer">Download PDF</a>
-              </div>
-
-              <div className="download-card-container">
-                <div className="download-card">
-                  <div className="title">Open Source Healthcare Missionette</div>
-                  <MyImage filename="oshc-journal-home.png" />
-                </div>
-                <a href="" className="button" target="_blank" rel="noopener noreferrer">Download PDF</a>
-              </div>
+              // <div className="download-card-container">
+              //   <div className="download-card">
+              //     <div className="title"><span className="text--red">Nine Organizing Principles</span> of Open Source Healthcare</div>
+              //     <MyImage filename="oshc-journal-home.png" />
+              //   </div>
+              //   <a href="" className="button" target="_blank" rel="noopener noreferrer">Download PDF</a>
+              // </div>
+              //
+              // <div className="download-card-container">
+              //   <div className="download-card">
+              //     <div className="title">Open Source Healthcare Missionette</div>
+              //     <MyImage filename="oshc-journal-home.png" />
+              //   </div>
+              //   <a href="" className="button" target="_blank" rel="noopener noreferrer">Download PDF</a>
+              // </div>
 
             </Columns>
 

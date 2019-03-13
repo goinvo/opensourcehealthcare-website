@@ -1,5 +1,5 @@
-import { Link } from "gatsby"
-import React from "react"
+import React from 'react'
+import { Link } from 'gatsby'
 
 const Footer = ({ children }) => (
   <footer>
@@ -9,7 +9,7 @@ const Footer = ({ children }) => (
       <p className="text--center margin-top--none">GoInvo is a design studio focused on creating an open source future to drive better healthcare for all.</p>
       <p className="text--center"><Link to="https://www.goinvo.com/work/?category=open-source">Our open source projects</Link></p>
       <p className="text--center">
-        <Link to="mailto:hello@opensourcehealthcare.org">hello@opensourcehealthcare.org</Link>
+        <a href="mailto:hello@opensourcehealthcare.org">hello@opensourcehealthcare.org</a>
         <br />661 Massachusetts Ave, 3rd Floor,
         <br />Arlington, MA 02476
         <br /><a href="tel:+16175043390">617.504.3390</a>

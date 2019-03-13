@@ -1,7 +1,7 @@
 ---
 title: 'Open Source Healthcare Q&A'
 author: 'Eric Topol'
-hero: '/images/oshc-journal-home.jpg'
+hero: '../images/oshc-journal-home.jpg'
 upNext:
   - ''
   - ''
@@ -19,7 +19,7 @@ His Precision Medicine Initiative, funded by NIH, is out to make hyper-personali
 
 ---
 
-![sketch box](/images/sketch_box.png)
+![sketch box](../images/sketch_box.png)
 
 "Open source is fundamental. The fact that we don't have open healthcare reflects the deepness of our problem"
 

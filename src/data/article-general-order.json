@@ -1,9 +1,33 @@
 [
   {
-    "id": "qa-eric-topol",
+    "id": "billion-dollar-paywalls",
     "title": "Billion Dollar Paywalls",
-    "link": "/articles/qa-eric-topol",
-    "hero": "/images/oshc-journal-home.jpg",
-    "author": "Edwin Choi"
+    "link": "/articles/billion-dollar-paywalls",
+    "hero": "",
+    "author": ""
+  }, {
+    "id": "open-projects-changing-healthcare",
+    "title": "Five Open Projects that are Changing Healthcare",
+    "link": "/articles/open-projects-changing-healthcare",
+    "hero": "",
+    "author": ""
+  }, {
+    "id": "open-ehrs-going-global",
+    "title": "EHRs Going Global",
+    "link": "/articles/open-ehrs-going-global",
+    "hero": "",
+    "author": ""
+  }, {
+    "id": "hiding-in-plain-sight",
+    "title": "Hiding in Plain Sight: A Look at Everyday Open Source",
+    "link": "/articles/hiding-in-plain-sights",
+    "hero": "",
+    "author": ""
+  }, {
+    "id": "national-open-source-ehrs",
+    "title": "The Time is Ripe for a National Open Source EHRs to Emerge",
+    "link": "/articles/national-open-source-ehrs",
+    "hero": "",
+    "author": ""
   }
 ]

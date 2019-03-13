@@ -10,7 +10,7 @@ import Layout from './layout'
 //import Hero from './hero'
 //import Columns from './columns'
 //import ArticleCard from './articleCard'
-//import References from './references'
+import References from './references'
 
 import {
   findArticleById,
@@ -101,7 +101,6 @@ class ArticleLayout extends Component {
                   img: props => (
                     <MyImage
                       className="image--max-width"
-                      src={filename}
                       {...props}
                     />
                   ),
@@ -121,6 +120,16 @@ class ArticleLayout extends Component {
                       </MDXRenderer>
                     </div>
                   </div>
+
+                  {article.frontmatter.references ? (
+                    <div className="background--gray-light pad-vertical text--sm" id="references">
+                      <div className="max-width content-padding">
+                        <References
+                          references={article.frontmatter.references}
+                        />
+                      </div>
+                    </div>
+                  ) : null}
                 </div>
 
               </MDXProvider>

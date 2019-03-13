@@ -12,7 +12,10 @@ button, .button {
   margin: 10px auto;
   border: solid 2px $color-black;
   border-radius: $border-radius-btn;
+  background: $color-white;
   color: $color-black;
+  font-family: $font-family-default;
+  font-size: $font-size--base;
   font-weight: $font-weight--bold;
   text-align: center;
   text-decoration: none;

@@ -15,6 +15,28 @@ class ContactPage extends Component {
           <p>Let's have a chat
             <br/><a href="mailto:hello@opensourcehealthcare.org">hello@opensourcehealthcare.org</a></p>
 
+          <form className="form contact-form" name="contact" method="POST" data-netlify="true">
+            <div className="field">
+              <label>Your name</label>
+              <input type="text" name="name" />
+            </div>
+            <div className="field">
+              <label>Your email</label>
+              <input type="email" name="email" />
+            </div>
+            <div className="field">
+              <label>Your role</label>
+              <input type="text" name="role" />
+            </div>
+            <div className="field">
+              <label>How can we help?</label>
+              <textarea name="message"></textarea>
+            </div>
+            <div className="button-container">
+              <button className="button" type="submit">Send message</button>
+            </div>
+          </form>
+
           <p>Let's work together on creating an open source future to drive better healthcare for all.</p>
         </div>
       </Layout>

@@ -1,0 +1,15 @@
+.form {
+  label, input, textarea {
+    display: block;
+    width: 100%;
+  }
+  input, textarea {
+    background-color: $color-gray--light-bg;
+    border: none;
+    border-radius: 2px;
+    padding: 10px;
+  }
+  .field {
+    padding: 10px 0;
+  }
+}

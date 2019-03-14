@@ -1,7 +1,7 @@
 ---
 title: 'Hiding in Plain Sight: A Look at Everyday Open Source'
 author: 'GoInvo'
-hero: '../images/oshc-journal-home.jpg'
+hero: 'carecard-speakup.jpg'
 upNext:
   - ''
   - ''

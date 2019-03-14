@@ -1,7 +1,7 @@
 ---
 title: 'EHRs Going Global'
 author: 'GoInvo'
-hero: '../images/oshc-journal-home.jpg'
+hero: 'carecard-medicareforall.jpg'
 upNext:
   - ''
   - ''

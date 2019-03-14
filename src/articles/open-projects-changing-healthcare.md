@@ -1,7 +1,7 @@
 ---
 title: 'Five Open Projects that are Changing Healthcare'
 author: ''
-hero: ''
+hero: 'carecard-letpatientshelp.jpg'
 upNext:
   - ''
   - ''
@@ -19,7 +19,7 @@ Open Humans is a platform that allows citizen scientists to share their health d
 [www.openhumans.org](www.openhumans.org)
 
 ### OpenEMR
-An open source electronic health record system that targets small to medium-sized outpatient providers, openEMR is certified by the Office of the National Coordinator for Health Information Technology (ONC) to meet the 2014 edition of Meaningful Use guidelines in the US. OpenEMR enjoys broad adoption globally at oer 15,000 healthcare facilities with over 45,000 practitioners serving over 90 million patients.
+An open source electronic health record system that targets small to medium-sized outpatient providers, openEMR is certified by the Office of the National Coordinator for Health Information Technology (ONC) to meet the 2014 edition of Meaningful Use guidelines in the US. OpenEMR enjoys broad adoption globally at over 15,000 healthcare facilities with over 45,000 practitioners serving over 90 million patients.
 [www.open-emr.org](www.open-emr.org)
 
 ### Sage Bionetworks Participant-Centered Consent

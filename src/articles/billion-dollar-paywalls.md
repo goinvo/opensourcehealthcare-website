@@ -1,7 +1,7 @@
 ---
 title: 'Billion Dollar Paywalls'
 author: 'GoInvo'
-hero: '../images/oshc-journal-home.jpg'
+hero: 'carecard-knowthecost.jpg'
 upNext:
   - ''
   - ''

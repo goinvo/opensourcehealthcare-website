@@ -1,7 +1,7 @@
 ---
 title: 'The Time is Ripe for a National Open Source EHRs to Emerge'
 author: 'GoInvo'
-hero: '../images/oshc-journal-home.jpg'
+hero: 'carecard-healthcarehumanright.jpg'
 upNext:
   - ''
   - ''

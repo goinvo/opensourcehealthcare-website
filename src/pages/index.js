@@ -23,7 +23,7 @@ const IndexPage = () => (
 
       <div className="open-source-is background--dark-gradient-linear-transparent">
         <div className="max-width content-padding pad-vertical pad-top--double header-padding">
-          <p className="text--center journal-link"><Link to="/download/" target="_blank" rel="noopener">Check out the Open Source Healthcare journal</Link></p>
+          <p className="text--center journal-link"><Link to="/downloads/" target="_blank" rel="noopener">Check out the Open Source Healthcare journal</Link></p>
           <div className="mission-home text--white">
               <h4>Open Source (OS) Software is</h4>
               <p>something that anyone can change and share, because it's publicly available under a generous license. While it first began with computer code, open source now influences how projects and businesses work, and our lives benefit from this open sharing. Open source has grown into a way of participating with many others that asks for transparency, community-based collaboration, and meritocracy. The best ideas float to the top, and you earn trust by what you do and how you amplify the group.</p>
@@ -135,10 +135,10 @@ const IndexPage = () => (
         <div className="max-width content-padding pad-vertical">
           <h2 className="header-xl">References</h2>
           <div id="references" className="text--sm">
-            <p>1.
-              <br/>F. Aminpour, F. Sadoughi and M. Ahamdi, “Utilization of open source electronic health record around the world: A systematic review”, Journal of Research in Medical Sciences : The Official Journal of Isfahan University of Medical Sciences, vol. 19, no. 1, pp. 57-64, 2014.</p>
-            <p>2.
-              <br/>“Frequently Asked Questions | Medsphere Commercial”, Medsphere, 2018. [Online]. Available: <a href="http://www.medsphere.com/company/frequently-asked-questions" rel="noopener noreferrer" target="_blank">http://www.medsphere.com/company/frequently-asked-questions</a>. [Accessed: 03 Jan 2018].</p>
+            <ol className="ol reference-list ol--sm">
+            <li>F. Aminpour, F. Sadoughi, and M. Ahamdi. Utilization of open source electronic health record around the world: A systematic review. Journal of Research in Medical Sciences: The Official Journal of Isfahan University of Medical Sciences. vol. 19, no. 1, pp. 57-64. 2014.</li>
+            <li><a href="http://www.medsphere.com/company/frequently-asked-questions" rel="noopener noreferrer" target="_blank">Frequently Asked Questions. Medsphere. 2018. Accessed 3 Jan 2018.</a></li>
+            </ol>
           </div>
         </div>
       </div>

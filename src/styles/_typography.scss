@@ -77,6 +77,18 @@ h3 {
 
 ol {
   padding-left: 20px;
+  line-height: $line-height--base;
+  &.reference-list {
+    padding-left: 15px;
+    line-height: $line-height--sm;
+    font-size: $font-size--sm;
+    a {
+      word-wrap: break-word;
+    }
+  }
+  li {
+    margin-bottom: 20px;
+  }
 }
 ul {
   padding-left: 0;

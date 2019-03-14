@@ -4,14 +4,14 @@ class References extends Component {
   render() {
     return (
       <div>
-        <h2 className="header--lg text--center margin-top--double">
+        <h2 className="header-xl">
           References
         </h2>
-        <ol className="references">
+        <ol className="reference-list">
           {this.props.references.map((ref, i) => {
             const key = ref.link && ref.link.length ? ref.link : ref.title
             return (
-              <li key={key} className="text--gray margin-bottom">
+              <li key={key}>
                 <span id={`fn-${i + 1}`}>{ref.title}</span>
                 {ref.link ? (
                   <span>

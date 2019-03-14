@@ -93,14 +93,12 @@ const Mission = () => (
         <div className="max-width content-padding pad-vertical">
           <h2 className="header-xl">References</h2>
           <div id="references" className="text--sm">
-            <p>1.
-              <br/>M. Alsaffar, P. Yellowlees, A. Odor and M. Hogarth, "The State of Open Source Electronic Health Record Projects: A Software Anthropology Study", JMIR Medical Informatics, vol. 5, no. 1, p. e6, 2017.</p>
-            <p>2.
-              <br/>"Open collaboration", Wikipedia, 2018. [Online]. Available: <a href="https://en.wikipedia.org/wiki/Open_collaboration" rel="noopener noreferrer" target="_blank">https://en.wikipedia.org/wiki/Open_collaboration</a>. [Accessed: 03 Jan 2018].</p>
-            <p>3.
-              <br/>M. Goulde and M. Holt, Open Source Software: A Primer for Health Care Leaders. Oakland, Calif.: California HealthCare Foundation, 2006.</p>
-            <p>4.
-              <br/>P. Millard, J. Bru and C. Berger, "Open-source point-of-care electronic medical records for use in resource-limited settings: systematic review and questionnaire surveys", The BMJ, vol. 2, no. 4, p. e000690, 2012.</p>
+            <ol className="ol reference-list ol--sm">
+              <li>M. Alsaffar, P. Yellowlees, A. Odor, and M. Hogarth. The State of Open Source Electronic Health Record Projects: A Software Anthropology Study. JMIR Medical Informatics. vol. 5, no. 1, p. e6. 2017.</li>
+              <li><a href="https://en.wikipedia.org/wiki/Open_collaboration" rel="noopener noreferrer" target="_blank">Open collaboration. Wikipedia. 2018. Accessed 3 Jan 2018.</a></li>
+              <li>M. Goulde and M. Holt. Open Source Software: A Primer for Health Care Leaders. Oakland, CA: California HealthCare Foundation. 2006.</li>
+              <li>P. Millard, J. Bru, and C. Berger. Open-source point-of-care electronic medical records for use in resource-limited settings: systematic review and questionnaire surveys. The BMJ. vol. 2, no. 4, p. e000690. 2012.</li>
+            </ol>
           </div>
         </div>
       </div>

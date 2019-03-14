@@ -170,18 +170,23 @@
     &--fixed {
       position: fixed;
     }
-    &--mission {
-      background-color: #000330;
-      @include mq($from: large) {
-        margin-top: -50%;
-      }
-    }
     &--home {
       background-color: $color-white;
       .hero-image {
         @include mq($from: large) {
           margin-top: -20%;
         }
+      }
+    }
+    &--mission {
+      background-color: #000330;
+      @include mq($from: large) {
+        margin-top: -50%;
+      }
+    }
+    &--action {
+      @include mq($from: large) {
+        margin-top: -30%;
       }
     }
   }

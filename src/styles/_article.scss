@@ -13,5 +13,8 @@
 .article-hero {
   width: 100%;
   height: auto;
-  object-position: center center;
+  max-height:400px;
+  overflow: hidden;
+  position: center center;
+  vertical-align: bottom;
 }

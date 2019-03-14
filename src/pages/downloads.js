@@ -11,7 +11,7 @@ class DownloadPage extends Component {
     return (
       <Layout>
         <div className="max-width content-padding pad-vertical pad-top--double header-padding">
-          <h1><span className="text--red">Open sharing</span> benefits all</h1>
+          <h1 className="text--center"><span className="text--red">Open sharing</span> benefits all</h1>
 
           <p className="text--center">Own the OS handbook,
             <br/>Write your own OS principles,

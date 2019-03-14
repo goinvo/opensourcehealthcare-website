@@ -4,10 +4,11 @@ import { MDXProvider } from '@mdx-js/tag'
 import MDXRenderer from 'gatsby-mdx/mdx-renderer'
 import Helmet from 'react-helmet'
 //import Img from 'gatsby-image'
-//import MyImage from '../components/myImage'
+
 
 import Layout from './layout'
-//import Hero from './hero'
+import MyImage from '../components/myImage'
+import Hero from './hero'
 //import Columns from './columns'
 //import ArticleCard from './articleCard'
 import References from './references'
@@ -102,7 +103,9 @@ class ArticleLayout extends Component {
               >
                 <div className="article">
                   <div className="article-hero-container header-padding">
-                    <div className="article-hero"></div>
+                    <div className="article-hero">
+                      <Hero hero={article.frontmatter.author} />
+                    </div>
                   </div>
 
                   <div className="max-width content-padding pad-vertical">

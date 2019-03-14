@@ -1,7 +1,7 @@
 ---
 title: 'Open Source Healthcare Q&A'
 author: 'Eric Topol'
-hero: '../images/oshc-journal-home.jpg'
+hero: 'carecard-givememydata.jpg'
 upNext:
   - ''
   - ''

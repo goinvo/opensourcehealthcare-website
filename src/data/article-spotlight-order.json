@@ -3,14 +3,14 @@
     "id": "qa-eric-topol",
     "title": "Open Source Healthcare Q&A",
     "link": "/articles/qa-eric-topol",
-    "hero": "/images/oshc-journal-home.jpg",
+    "hero": "carecard-givememydata.jpg",
     "author": "Eric Topol"
   },
   {
     "id": "patient-payer-consumer-citizen",
     "title": "The Patient is the Payer is the Consumer is the Citizen",
     "link": "/articles/patient-payer-consumer-citizen",
-    "hero": "/images/oshc-journal-home.jpg",
+    "hero": "carecard-knowthecost.jpg",
     "author": "Jane Sarasohn-Kahn"
   }
 ]

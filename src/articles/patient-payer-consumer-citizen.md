@@ -1,7 +1,7 @@
 ---
 title: 'The Patient is the Payer is the Consumer is the Citizen'
 author: 'Jane Sarasohn-Kahn'
-hero: '../images/oshc-journal-home.jpg'
+hero: 'carecard-knowthecost.jpg'
 upNext:
   - ''
   - ''

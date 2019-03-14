@@ -3,7 +3,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 1020px;
+    width: 800px;
     margin: 0 auto;
 }
 
@@ -131,19 +131,26 @@
     width: 100%;
     height: auto;
     max-height: 680px;
+    .hero-image {
+      z-index: -2;
+      @include mq($from: medium) {
+        margin-top: -50%;
+      }
+    }
     &--fixed {
       background-attachment: fixed;
     }
     &--home {
       background-image: url("../images/oshc-journal-home.png");
       .header-container {
+        z-index: 0;
         @include mq($from: large) {
           display: flex;
           flex-direction: row;
           flex-wrap: nowrap;
           justify-content: space-between;
           align-items: baseline;
-          height: 500px;
+          max-height: 300px;
         }
       }
       h2 {
@@ -169,6 +176,10 @@
         padding-bottom: 150px;
         background: radial-gradient(ellipse at center, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 79%);
       }
+    }
+    &--action {
+      position: fixed;
+
     }
   }
 }

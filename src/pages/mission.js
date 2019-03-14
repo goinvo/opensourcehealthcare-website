@@ -1,7 +1,8 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react'
+import { Link } from 'gatsby'
 
-import Layout from "../components/layout"
+import Layout from '../components/layout'
+import Hero from '../components/hero'
 
 const Mission = () => (
   <Layout>
@@ -16,7 +17,7 @@ const Mission = () => (
       </div>
     </div>
 
-    <div className="z-1">
+    <div className="content">
       <div className="background--dark-gradient-radial">
         <div className="max-width content-padding pad-vertical">
           <h2 className="header-xl">OS Healthcare Missionette</h2>

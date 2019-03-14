@@ -2,14 +2,15 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
+import Hero from '../components/hero'
 
 const Mission = () => (
   <Layout>
     <div className="hero-container">
-      <div className="hero hero--fixed hero--action"></div>
+      <div className="hero hero--fixed hero--action"><Hero hero="supporting-patients-2.jpg" /></div>
     </div>
 
-    <div className="principles">
+    <div className="content principles">
       <div className="max-width content-padding pad-vertical">
         <h1 className="header-xl"><span className="text--red">Nine organizing principles</span> of open source healthcare</h1>
         <p>A framework for responsible use and management of patient health data and information for the advancement of health quality, health research, and data ownership.</p>

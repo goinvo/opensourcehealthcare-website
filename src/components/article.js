@@ -99,12 +99,15 @@ class ArticleLayout extends Component {
                       {children}
                     </ul>
                   ),
+                  img: ({ children, ...props}) => (
+                    <MyImage filename={children} {...props} />
+                  )
                 }}
               >
                 <div className="article">
                   <div className="article-hero-container header-padding">
                     <div className="article-hero">
-                      <Hero hero={article.frontmatter.author} />
+                      <Hero hero={article.frontmatter.hero} />
                     </div>
                   </div>
 

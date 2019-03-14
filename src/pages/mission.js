@@ -6,14 +6,14 @@ import Hero from '../components/hero'
 
 const Mission = () => (
   <Layout>
-    <div className="hero-container hero-container--mission">
-      <div className="hero hero--fixed hero--mission">
-        <div className="max-width content-padding pad-vertical header-padding">
-          <div className="header-container">
-          <h1 className="text--center mobile-squish-md">We live in a closed healthcare system</h1>
-          <p className="text--center mobile-squish-md">We demand that our healthcare services be open.</p>
-          </div>
-        </div>
+    <div className="hero-container">
+      <div className="hero hero--fixed hero--mission"><Hero hero="open-source-black-box.jpg" /></div>
+    </div>
+
+    <div className="max-width content-padding pad-vertical header-padding">
+      <div className="header-container header-container--mission">
+        <h1 className="text--center mobile-squish-md">We live in a closed healthcare system</h1>
+        <p className="text--center mobile-squish-md">We demand that our healthcare services be open.</p>
       </div>
     </div>
 

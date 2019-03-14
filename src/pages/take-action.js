@@ -10,6 +10,13 @@ const Mission = () => (
       <div className="hero hero--fixed hero--action"><Hero hero="supporting-patients-2.jpg" /></div>
     </div>
 
+    <div className="max-width content-padding pad-vertical header-padding">
+      <div className="header-container header-container--mission">
+        <h1 className="text--center mobile-squish-md">We live in a closed healthcare system</h1>
+        <p className="text--center mobile-squish-md">We demand that our healthcare services be open.</p>
+      </div>
+    </div>
+
     <div className="content principles">
       <div className="max-width content-padding pad-vertical">
         <h1 className="header-xl"><span className="text--red">Nine organizing principles</span> of open source healthcare</h1>

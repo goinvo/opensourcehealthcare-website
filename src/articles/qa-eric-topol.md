@@ -16,8 +16,6 @@ His Precision Medicine Initiative, funded by NIH, is out to make hyper-personali
 
 ---
 
-![sketch box](../images/sketch_box.png)
-
 "Open source is fundamental. The fact that we don't have open healthcare reflects the deepness of our problem"
 
 ### 1. Put the Patient in the Driver’s Seat

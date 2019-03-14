@@ -24,17 +24,36 @@ header {
 footer {
 	background: $color-gray--dark;
 	color: #fff;
+	text-align: center;
+	@include mq($from: large) {
+		text-align: left;
+	}
 	a {
 		color: $color-red--light;
 	}
 	p {
 		padding: 10px 0;
 	}
+	@include mq($from: large) {
+		.top-left, .bottom-right {
+			display: inline-block;
+			width: 45%;
+			margin-right: 35px;
+			vertical-align: top;
+		}
+		.bottom-right {
+		 	padding-top: 70px;
+		}
+	}
+}
+
+.content {
+	background: $color-white;
 }
 
 .max-width {
-  max-width: 1020px;
   margin: 0 auto;
+	max-width: 800px;
 
   &--sm {
     max-width: 600px;

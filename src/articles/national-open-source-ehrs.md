@@ -11,7 +11,7 @@ metaDescription: ''
 references:
   - title: 'Getting Meaningful Use Right. American Hospital Association, 2016.'
     link: ''
-  - title: 'A. Vaidya. Epic, Cerner hold 50% of hospital EHR market share: 8 things to know. Becker's Hospital Review. 2017. Accessed 3 Jan 2018.'
+  - title: 'A. Vaidya. Epic, Cerner hold 50% of hospital EHR market share: 8 things to know. Becker&#39;s Hospital Review. 2017. Accessed 3 Jan 2018.'
     link: 'https://www.beckershospitalreview.com/healthcare-information-technology/epic-cerner-hold-50-of-hospital-ehr-market-share-8-things-to-know.html'
   - title: 'Frequently Asked Questions. Medsphere. 2018. Accessed 3 Jan 2018.'
     link: 'http://www.medsphere.com/company/frequently-asked-questions'

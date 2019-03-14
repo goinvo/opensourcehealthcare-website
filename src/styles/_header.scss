@@ -160,10 +160,14 @@
       }
     }
     &--mission {
-      background-image: url("../images/sketch-box.png");
+      background-image: url("../images/open-source-black-box.jpg");
+      background-color: #000330;
+      color: $color-white;
+
       .header-container {
-        margin-top: 170px;
+        padding-top: 170px;
         padding-bottom: 150px;
+        background: radial-gradient(ellipse at center, rgba(0,0,0,.5) 0%,rgba(0,0,0,0) 79%);
       }
     }
   }

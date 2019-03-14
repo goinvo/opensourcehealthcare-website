@@ -13,7 +13,7 @@ class DownloadPage extends Component {
         <div className="max-width content-padding pad-vertical pad-top--double header-padding">
           <h1><span className="text--red">Open sharing</span> benefits all</h1>
 
-          <p>Own the OS handbook,
+          <p className="text--center">Own the OS handbook,
             <br/>Write your own OS principles,
             <br/>Share your OS points of view to public.</p>
 

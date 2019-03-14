@@ -22,7 +22,7 @@ class DownloadPage extends Component {
               <div className="download-card-container">
                 <div className="download-card">
                   <div className="title">Open Source Healthcare</div>
-                  <MyImage filename="oshc-journal-home.png" />
+                  <MyImage filename="open-source-dark.jpg" />
                 </div>
                 <a href={pdf} className="button" target="_blank" rel="noopener noreferrer">Download 25MB PDF</a>
                 <a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a>

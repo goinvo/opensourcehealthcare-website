@@ -9,7 +9,8 @@ import spotlightItems from '../data/article-spotlight-order'
 const IndexPage = () => (
   <Layout>
     <div className="hero-container">
-      <div className="hero hero--fixed hero--home"><Hero hero="open-source-home.jpg" /></div>
+      <div className="hero hero--fixed hero--home hidden--sm"><Hero hero="open-source-home.png" /></div>
+      <div className="hero hero--fixed hero--home hidden--md"><Hero hero="open-source-home-mobile.jpg" /></div>
     </div>
 
     <div className="max-width content-padding pad-vertical header-padding">

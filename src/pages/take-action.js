@@ -11,9 +11,7 @@ const Mission = () => (
     </div>
 
     <div className="max-width content-padding pad-vertical header-padding">
-      <div className="header-container header-container--mission">
-        <h1 className="text--center mobile-squish-md">We live in a closed healthcare system</h1>
-        <p className="text--center mobile-squish-md">We demand that our healthcare services be open.</p>
+      <div className="header-container header-container--action">
       </div>
     </div>
 
@@ -85,29 +83,29 @@ const Mission = () => (
 
         <div class="button-container"><Link to="" className="button">Download PDF</Link></div>
       </div>
-    </div>
 
-    <div className="community">
-      <div className="max-width content-padding pad-vertical">
-        <h2 className="header-xl">Be a part to grow the open source healthcare community</h2>
+      <div className="community">
+        <div className="max-width content-padding pad-vertical">
+          <h2 className="header-xl">Be a part to grow the open source healthcare community</h2>
 
-        <div className="community-role">
-          <h3>as an Organization</h3>
-          <p>what you can do</p>
-        </div>
-        <div className="community-role">
-          <h3>as an Engineer</h3>
-          <p>what you can do</p>
-        </div>
-        <div className="community-role">
-          <h3>as an Concerned Citizen</h3>
-          <p>what you can do</p>
-        </div>
+          <div className="community-role">
+            <h3>as an Organization</h3>
+            <p>what you can do</p>
+          </div>
+          <div className="community-role">
+            <h3>as an Engineer</h3>
+            <p>what you can do</p>
+          </div>
+          <div className="community-role">
+            <h3>as an Concerned Citizen</h3>
+            <p>what you can do</p>
+          </div>
 
-        <div class="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+          <div class="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+        </div>
       </div>
-    </div>
 
+    </div>
   </Layout>
 )
 

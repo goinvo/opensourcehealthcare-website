@@ -133,12 +133,17 @@ footer {
     }
   }
   &--md {
-    @include mq($until: large) {
+    @include mq($from: medium) {
       display: none !important;
     }
   }
   &--lg {
     @include mq($from: large) {
+      display: none !important;
+    }
+  }
+	&--until-md {
+    @include mq($until: large) {
       display: none !important;
     }
   }

@@ -6,6 +6,11 @@ $border-radius-btn: 2px;
   padding: 20px 0;
 }
 button, .button {
+  font-family: $font-family-default;
+  font-size: $font-size--base;
+  font-weight: $font-weight--bold;
+  text-align: center;
+  text-decoration: none;
   box-sizing: border-box;
   display: block;
   padding: 10px 30px;
@@ -14,13 +19,11 @@ button, .button {
   border-radius: $border-radius-btn;
   background: $color-white;
   color: $color-black;
-  font-family: $font-family-default;
-  font-size: $font-size--base;
-  font-weight: $font-weight--bold;
-  text-align: center;
-  text-decoration: none;
   max-width: 250px;
 
+  &--lg {
+    max-width: 450px;
+  }
   &--primary {
     background: $color-black;
     color: $color-white;

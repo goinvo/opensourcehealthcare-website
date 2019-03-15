@@ -23,7 +23,7 @@ const IndexPage = () => (
 
       <div className="open-source-is background--dark-gradient-linear-transparent">
         <div className="max-width content-padding pad-vertical pad-top--double header-padding">
-          <h2 className="header--xl text--center journal-link"><Link to="/downloads/" target="_blank" rel="noopener">Check out the Open Source Healthcare journal</Link></h2>
+          <Link to="/downloads/" className="button button--lg journal-link">Check out the Open Source Healthcare Journal</Link>
           <div className="mission-home text--white">
               <h4>Open Source (OS) Software is</h4>
               <p>something that anyone can change and share, because it's publicly available under a generous license. While it first began with computer code, open source now influences how projects and businesses work, and our lives benefit from this open sharing. Open source has grown into a way of participating with many others that asks for transparency, community-based collaboration, and meritocracy. The best ideas float to the top, and you earn trust by what you do and how you amplify the group.</p>

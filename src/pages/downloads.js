@@ -11,7 +11,7 @@ class DownloadPage extends Component {
     return (
       <Layout>
         <div className="max-width content-padding pad-vertical pad-top--double header-padding">
-          <h1 className="text--center"><span className="text--red">Open sharing</span> benefits all</h1>
+          <h1 className="text--center mobile-squish-sm"><span className="text--red">Open sharing</span> benefits all</h1>
 
           <p className="text--center">Own the OS handbook,
             <br/>Write your own OS principles,
@@ -24,8 +24,17 @@ class DownloadPage extends Component {
                   <div className="title">Open Source Healthcare</div>
                   <MyImage filename="open-source-dark.jpg" />
                 </div>
-                <a href={pdf} className="button" target="_blank" rel="noopener noreferrer">Download 25MB PDF</a>
-                <a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a>
+
+                <div className="button-container">
+                  <div className="button-mask button-mask--primary">
+                    <span className="mask"><a href={pdf} target="_blank" rel="noopener noreferrer">Download 25MB PDF</a></span>
+                    <button type="button" name="Hover"><a href={pdf} target="_blank" rel="noopener noreferrer">Download 25MB PDF</a></button>
+                  </div>
+                  <div className="button-mask">
+                    <span className="mask"><a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" target="_blank" rel="noopener noreferrer">$12 Blurb book</a></span>
+                    <button type="button" name="Hover"><a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" target="_blank" rel="noopener noreferrer">$12 Blurb book</a></button>
+                  </div>
+                </div>
               </div>
 
             </div>

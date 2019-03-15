@@ -80,8 +80,6 @@ const Mission = () => (
           <h3>Community Engagement</h3>
           <p>A national health literacy service drives adoption of health data models and engages the imagination of the public to understand patient rights and health policy.</p>
         </div>
-
-        <div class="button-container"><Link to="" className="button">Download PDF</Link></div>
       </div>
 
       <div className="community">
@@ -101,7 +99,12 @@ const Mission = () => (
             <p>what you can do</p>
           </div>
 
-          <div class="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+          <div className="button-container">
+            <div class="button-mask">
+              <span class="mask"><Link to="/contact/">Get in touch</Link></span>
+              <button type="button" name="Hover"><Link to="/contact/">Get in touch</Link></button>
+            </div>
+          </div>
         </div>
       </div>
 

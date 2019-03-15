@@ -75,18 +75,37 @@ const Mission = () => (
         <div className="link-section">
           <h2 className="header-xl text--center">See points of view</h2>
           <p className="text--center">from thought leaders and check out notable Open Source (OS) projects</p>
-          <div className="button-container"><Link to="/evidence/" className="button">Evidence</Link></div>
+          <div className="button-container">
+            <div class="button-mask">
+              <span class="mask"><Link to="/evidence/">Evidence</Link></span>
+              <button type="button" name="Hover"><Link to="/evidence/">Evidence</Link></button>
+            </div>
+          </div>
         </div>
+
         <hr/>
+
         <div className="link-section">
           <h2 className="header-xl text--center">Find out the organizing principles of OSHC</h2>
-          <div className="button-container"><Link to="/take-action/" className="button">Take action</Link></div>
+          <div className="button-container">
+            <div class="button-mask">
+              <span class="mask"><Link to="/take-action/">Take action</Link></span>
+              <button type="button" name="Hover"><Link to="/take-action/">Take action</Link></button>
+            </div>
+          </div>
         </div>
+
         <hr />
+
         <div className="link-section">
           <h2 className="header-xl text--center">Work with us</h2>
-          <p className="text--center">on creatinv an open source future to drive better healthcare for all.</p>
-          <div className="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+          <p className="text--center">on creating an open source future to drive better healthcare for all.</p>
+          <div className="button-container">
+            <div class="button-mask">
+              <span class="mask"><Link to="/contact/">Get in touch</Link></span>
+              <button type="button" name="Hover"><Link to="/contact/">Get in touch</Link></button>
+            </div>
+          </div>
         </div>
       </div>
 

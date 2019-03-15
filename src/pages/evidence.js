@@ -45,14 +45,25 @@ class EvidencePage extends Component {
           <div className="download-section">
             <h2 className="header-xl text--center">Get your Open Source Healthcare journal here</h2>
             <div className="button-container">
-              <a href={pdf} className="button button--primary" target="_blank" rel="noopener noreferrer">Download 25MB PDF</a>
-              <a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a>
+              <div className="button-mask button-mask--primary">
+                <span className="mask"><a href={pdf} target="_blank" rel="noopener noreferrer">Download 25MB PDF</a></span>
+                <button type="button" name="Hover"><a href={pdf} target="_blank" rel="noopener noreferrer">Download 25MB PDF</a></button>
+              </div>
+              <div className="button-mask">
+                <span className="mask"><a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" target="_blank" rel="noopener noreferrer">$12 Blurb book</a></span>
+                <button type="button" name="Hover"><a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" target="_blank" rel="noopener noreferrer">$12 Blurb book</a></button>
+              </div>
             </div>
           </div>
 
           <div className="link-section link-section--evidence">
             <h2 className="header-xl text--center">Work with us towards the open source future.</h2>
-            <div className="button-container"><Link to="/contact/" className="button">Get in touch</Link></div>
+            <div className="button-container">
+              <div class="button-mask">
+                <span class="mask"><Link to="/contact/">Get in touch</Link></span>
+                <button type="button" name="Hover"><Link to="/contact/">Get in touch</Link></button>
+              </div>
+            </div>
           </div>
 
         </div>

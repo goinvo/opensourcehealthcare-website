@@ -35,7 +35,10 @@ class ContactPage extends Component {
               <textarea name="message"></textarea>
             </div>
             <div className="button-container">
-              <button className="button" type="submit">Send message</button>
+              <div class="button-mask">
+                <span class="mask">Send message</span>
+                <button type="submit" name="Hover">Send message</button>
+              </div>
             </div>
           </form>
 

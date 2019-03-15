@@ -15,28 +15,27 @@ const IndexPage = () => (
 
     <div className="max-width content-padding pad-vertical header-padding">
       <div className="header-container header-container--home">
-      <h1 className="text--center mobile-squish-sm">We demand <span className="text--red"> open source </span> healthcare</h1>
-      <h2 className="text--center mobile-squish-sm header-xl">We must set healthcare free</h2>
+        <h1 className="text--center mobile-squish-sm">We demand <span className="text--red"> open source </span> healthcare</h1>
+        <h2 className="text--center mobile-squish-sm header-xl">We must set healthcare free</h2>
       </div>
     </div>
 
+    <div className="open-source-is background--dark-gradient-linear-transparent">
+      <div className="max-width content-padding pad-vertical pad-top--double header-padding">
 
-      <div className="open-source-is background--dark-gradient-linear-transparent">
-        <div className="max-width content-padding pad-vertical pad-top--double header-padding">
-          <Link to="/downloads/" className="button button--lg journal-link">Check out the Open Source Healthcare Journal</Link>
-          <div className="mission-home text--white">
-              <h4>Open Source (OS) Software is</h4>
-              <p>something that anyone can change and share, because it's publicly available under a generous license. While it first began with computer code, open source now influences how projects and businesses work, and our lives benefit from this open sharing. Open source has grown into a way of participating with many others that asks for transparency, community-based collaboration, and meritocracy. The best ideas float to the top, and you earn trust by what you do and how you amplify the group.</p>
-              <p>Our internet is infused with open source ideas and services &mdash; from how cell phones communicate, to how e-mail is directed from one person to the next, to Linux. All of these technologies working together are the operating system of the internet.</p>
-              <p>Here in the US, healthcare is
-                <br />sometimes amazing,
-                <br />often lifesaving,
-                <br />always expensive,
-                <br />and mostly closed.</p>
-              <p>It's tribal at its core &mdash; each hospital, each doc, each healthcare system invents its own way &mdash;to the detriment of our collective health.</p>
-          </div>
+        <div className="mission-home text--white">
+            <h4>Open Source (OS) Software is</h4>
+            <p>something that anyone can change and share, because it's publicly available under a generous license. While it first began with computer code, open source now influences how projects and businesses work, and our lives benefit from this open sharing. Open source has grown into a way of participating with many others that asks for transparency, community-based collaboration, and meritocracy. The best ideas float to the top, and you earn trust by what you do and how you amplify the group.</p>
+            <p>Our internet is infused with open source ideas and services &mdash; from how cell phones communicate, to how e-mail is directed from one person to the next, to Linux. All of these technologies working together are the operating system of the internet.</p>
+            <p>Here in the US, healthcare is
+              <br />sometimes amazing,
+              <br />often lifesaving,
+              <br />always expensive,
+              <br />and mostly closed.</p>
+            <p>It's tribal at its core &mdash; each hospital, each doc, each healthcare system invents its own way &mdash;to the detriment of our collective health.</p>
         </div>
       </div>
+    </div>
 
     <div className="content">
       <div className="max-width content-padding pad-vertical">
@@ -82,7 +81,12 @@ const IndexPage = () => (
           <h3 className="text--red">Open EHRs Are Going Global</h3>
           <p>Creating, updating, and reconciling medical records is one of the most visible areas where technology has shaped healthcare. While most electronic health record (EHR) systems remain proprietary, over 30 countries now use open source EHRs in some capacity.<a href="#references"><sup>2</sup></a></p>
           <p>Founded in a rich legacy of global initiative to meet shared, human needs, successful open source healthcare IT initiatives are not only taking a hold in the United States<a href="#references"><sup>3</sup></a> but also spreading to many other communities in the world.</p>
-          <div className="button-container"><Link to="/evidence/" className="button button--primary">More evidence</Link></div>
+          <div className="button-container">
+            <div class="button-mask button-mask--primary">
+              <span class="mask"><Link to="/evidence/">More evidence</Link></span>
+              <button type="button" name="Hover"><Link to="/evidence/">More evidence</Link></button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -102,7 +106,12 @@ const IndexPage = () => (
             <li><Link to="/take-action/#principle-8">Health Data as a Public Resource</Link></li>
             <li><Link to="/take-action/#principle-9">Community Engagement</Link></li>
           </ol>
-          <div className="button-container"><Link to="/take-action/" className="button button--primary">Take action</Link></div>
+          <div className="button-container">
+            <div class="button-mask button-mask--primary">
+              <span class="mask"><Link to="/take-action/">Take action</Link></span>
+              <button type="button" name="Hover"><Link to="/take-action/">Take action</Link></button>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -125,7 +134,12 @@ const IndexPage = () => (
           <div className="projects-chunk">
             <h3>Clients</h3>
             <p>AHRQ, HHS, CMS, NIH, California Healthcare Foundation, State of MAssachusetts, MITRE, Walgreens</p>
-            <div className="button-container"><Link to="/contact/" className="button button--primary">Get in touch</Link></div>
+            <div className="button-container">
+              <div class="button-mask button-mask--primary">
+                <span class="mask"><Link to="/contact/">Get in touch</Link></span>
+                <button type="button" name="Hover"><Link to="/contact/">Get in touch</Link></button>
+              </div>
+            </div>
           </div>
 
         </div>

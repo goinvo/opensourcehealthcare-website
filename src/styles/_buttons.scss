@@ -1,3 +1,28 @@
+// <div class="button-mask button-mask--primary">
+//     <span class="mask">Download</span>
+//   <button type="button" name="Hover">Download</button>
+// </div>
+
+// <div class="button-mask button-mask">
+//     <span class="mask">Download</span>
+//   <button type="button" name="Hover">Download</button>
+// </div>
+
+@mixin button($bcolor,
+$url,
+$x1,
+$y1,
+$bor,
+$col) {
+ background: $bcolor;
+ -webkit-mask: url($url);
+ mask: url($url);
+ -webkit-mask-size: $x1 $y1;
+ mask-size: $x1 $y1;
+ border: $bor;
+ color: $col;
+}
+
 $border-radius-btn: 2px;
 
 .button-container {
@@ -5,38 +30,119 @@ $border-radius-btn: 2px;
   width: 100%;
   padding: 20px 0;
 }
-button, .button {
+button, .button, .mask {
+  box-sizing: border-box;
+  display: block;
+  border-radius: $border-radius-btn;
   font-family: $font-family-default;
   font-size: $font-size--base;
   font-weight: $font-weight--bold;
   text-align: center;
   text-decoration: none;
-  box-sizing: border-box;
-  display: block;
-  padding: 10px 30px;
-  margin: 10px auto;
-  border: solid 2px $color-black;
-  border-radius: $border-radius-btn;
-  background: $color-white;
-  color: $color-black;
+  line-height: $line-height--base;
+  border: solid 2px #000;
+}
+.button-mask {
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
   max-width: 250px;
-  &:hover {
-    background: $color-black;
-    color: $color-white;
-    border-color: $color-white;
-  }
-
+  margin: 0 auto;
   &--lg {
     max-width: 450px;
   }
-  &--primary {
-    background: $color-black;
-    color: $color-white;
-    border-color: $color-white;
+
+  .mask {
+   position: absolute;
+   margin-top: 10px;
+   margin-left: 0;
+   padding: 10px 22px;
+   width: 100%;
+   overflow: hidden;
+   background: #000;
+   color: $color-white;
+   a {
+     color: $color-white;
+   }
+  }
+  button, .button {
+    width: 100%;
+    padding: 10px 30px;
+    margin: 10px auto;
+    border: solid 2px #000 !important;
+    background: $color-white;
+    @include button(#fff,
+    "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+    3000%,
+    100%,
+    none,
+    #000);
+    cursor: pointer;
+    -webkit-animation: ani2 0.7s steps(29) forwards;
+    animation: ani2 0.7s steps(29) forwards;
+
     &:hover {
-      background: $color-white;
+     -webkit-animation: ani 0.7s steps(29) forwards;
+     animation: ani 0.7s steps(29) forwards;
+    }
+    a {
       color: $color-black;
-      border-color: $color-black;
     }
   }
+
+  &--primary {
+    .mask {
+      background: $color-white;
+      color: $color-black;
+      a {
+        color: $color-black;
+      }
+    }
+    button, .button {
+      background: $color-black;
+      color: $color-white;
+      border-color: $color-white;
+      @include button(#000,
+      "https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png",
+      3000%,
+      100%,
+      none,
+      #fff);
+      cursor: pointer;
+      -webkit-animation: ani2 0.7s steps(29) forwards;
+      animation: ani2 0.7s steps(29) forwards;
+
+      &:hover {
+       -webkit-animation: ani 0.7s steps(29) forwards;
+       animation: ani 0.7s steps(29) forwards;
+      }
+      a {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes ani {
+ from {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+
+ to {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
+}
+
+@keyframes ani {
+ from {
+  -webkit-mask-position: 0 0;
+  mask-position: 0 0;
+ }
+
+ to {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+ }
 }

@@ -70,7 +70,7 @@ class Header extends Component {
                 })}
               </ul>
               <div className="contact-link">
-                <a href="mailto:juhan@goinvo.com?subject=Message%20from%20Open%20Source%20Healthcare">Contact Open Source Healthcare</a>
+                <Email text="Contact Open Source Healthcare" />
               </div>
             </div>
           </div>

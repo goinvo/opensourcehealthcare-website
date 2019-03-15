@@ -2,8 +2,13 @@
   margin-top: -100px;
 }
 .journal-link {
-  margin-top: 150px;
-  a { color: $color-red--light; }
+  margin-top: 60px;
+  margin-bottom: 90px;
+  font-weight: $font-weight--bold;
+  a {
+    color: $color-red;
+    text-decoration: underline;
+  }
 }
 
 .reasons {

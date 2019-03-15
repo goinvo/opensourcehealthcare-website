@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Link } from 'gatsby'
 
 import Logo from '../assets/images/logo.inline.svg'
+import Email from './email'
 
 class Header extends Component {
   constructor(props) {
@@ -69,7 +70,7 @@ class Header extends Component {
                 })}
               </ul>
               <div className="contact-link">
-                <Link to="mailto:hello@opensourcehealthcare.org">hello@opensourcehealthcare.org</Link>
+                <a href="mailto:juhan@goinvo.com?subject=Message%20from%20Open%20Source%20Healthcare">Contact Open Source Healthcare</a>
               </div>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
+import Email from './email'
+
 const Footer = ({ children }) => (
   <footer>
     <div className="max-width content-padding pad-vertical">
@@ -12,7 +14,7 @@ const Footer = ({ children }) => (
       </div>
       <div className="bottom-right">
         <p>
-          <a href="mailto:hello@opensourcehealthcare.org">hello@opensourcehealthcare.org</a>
+          <Email text="Contact Open Source Healthcare" />
           <br />661 Massachusetts Ave, 3rd Floor,
           <br />Arlington, MA 02476
           <br /><a href="tel:+16175043390">617.504.3390</a>

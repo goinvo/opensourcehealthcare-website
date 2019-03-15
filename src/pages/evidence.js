@@ -44,8 +44,10 @@ class EvidencePage extends Component {
 
           <div className="download-section">
             <h2 className="header-xl text--center">Get your Open Source Healthcare journal here</h2>
-            <div className="button-container"><a href={pdf} className="button button--primary" target="_blank" rel="noopener noreferrer">Download 25MB PDF</a></div>
-            <div className="button-container"><a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a></div>
+            <div className="button-container">
+              <a href={pdf} className="button button--primary" target="_blank" rel="noopener noreferrer">Download 25MB PDF</a>
+              <a href="http://www.blurb.com/b/8980724-open-source-healthcare-journal" className="button" target="_blank" rel="noopener noreferrer">$12 Blurb book</a>
+            </div>
           </div>
 
           <div className="link-section link-section--evidence">

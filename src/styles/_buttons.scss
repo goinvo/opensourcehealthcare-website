@@ -24,5 +24,6 @@ button, .button {
   &--primary {
     background: $color-black;
     color: $color-white;
+    border-color: $color-white;
   }
 }

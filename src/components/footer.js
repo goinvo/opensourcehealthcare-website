@@ -8,7 +8,7 @@ const Footer = ({ children }) => (
         <p>Who are we?</p>
         <h3 className="margin-bottom--none">We are GoInvo</h3>
         <p className="margin-top--none">GoInvo is a design studio focused on creating an open source future to drive better healthcare for all.</p>
-        <p><Link to="https://www.goinvo.com/work/?category=open-source">Our open source projects</Link></p>
+        <p><a href="https://www.goinvo.com/work/?category=open-source" rel="noopener noreferrer" target="_blank">Our open source projects</a></p>
       </div>
       <div className="bottom-right">
         <p>

@@ -49,7 +49,7 @@ const IndexPage = () => (
             <p>because getting to the destination is a necessity.</p>
           </div>
           <div className="reason">
-            <p>We have open standards <br/>for finance</p>
+            <p>We need open standards <br/>for healthcare</p>
             <p>because <strong>our lives depend on it</strong>.</p>
           </div>
         </div>

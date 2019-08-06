@@ -45,7 +45,7 @@ const IndexPage = () => (
             <p>because we value our money more than our health.</p>
           </div>
           <div className="reason">
-            <p>We have open standards <br/>for finance</p>
+            <p>We have open standards <br/>for transportation</p>
             <p>because getting to the destination is a necessity.</p>
           </div>
           <div className="reason">

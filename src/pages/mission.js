@@ -7,7 +7,12 @@ import Hero from '../components/hero'
 const Mission = () => (
   <Layout>
     <div className="hero-container">
-      <div className="hero hero--fixed hero--mission"><Hero hero="open-source-black-box.jpg" /></div>
+      <div className="hero hero--fixed hero--mission hidden--sm">
+        <Hero hero="open-source-black-box-wide.jpg" />
+      </div>
+      <div className="hero hero--fixed hero--mission hidden--lg">
+        <Hero hero="open-source-black-box.jpg" />
+      </div>
     </div>
 
     <div className="max-width content-padding pad-vertical header-padding">
@@ -18,14 +23,31 @@ const Mission = () => (
     </div>
 
     <div className="content">
-      <div className="background--dark-gradient-radial">
+      <div className="background--dark-purple text--white">
         <div className="max-width content-padding pad-vertical">
           <h2 className="header-xl">OS Healthcare Missionette</h2>
-          <p>We live in a closed healthcare system. The algorithms that drive our care, to our clinical and life data, to hospital and treatment pricing, are governed by blackbox services.</p>
-          <p>By using these closed systems, we are actively designed out of the decision-making process, in favor of corporate "optimized care" for optimized returns vs optimized health outcomes. The crooked biases built into software, implemented with intent or accidentally, need interrogation, citizen collaboration, and correction.</p>
-          <p>It's our health.
-            <br/>Our very lives are at stake.</p>
-          <p>We demand that our healthcare services be open to inspect and correct bias, to be accessible for rapid innovation and evolution, and to become more valuable as more patients, clinicians, clinics, companies, and governments engage in healthcare for all.</p>
+          <p>Corporate healthcare is killing us.</p>
+
+          <p>We’re dying younger,<br/>
+            maternal mortality is ticking up,<br/>
+            and big money is running healthcare,<br/>
+            at our expense.</p>
+
+          <p>The algorithms that drive our care,<br/>
+          the software that dictates our parents’ care,<br/>
+          our neighborhood’s care, our nation’s care,<br/>
+          and the everyday services we rely on,<br/>
+          feed on our experiences,<br/>
+          and are governed by black boxes and crooked biases.</p>
+
+          <p>It’s our health.<br/>
+            Our very lives are at stake.</p>
+
+          <p>We demand open source healthcare.<br/>
+            Because healthcare is too important to be closed.</p>
+
+          <p>We, the atomic units of the health system,<br/>
+            can bend it back to the light.</p>
         </div>
       </div>
 
@@ -40,7 +62,7 @@ const Mission = () => (
         <p>Open collaboration extends beyond software into communities that share ideas and generate content, both digital and physical.<a href="#references"><sup>2</sup></a> These communities amplify the reputations of their contributors, and create a reservoir of ideas that power open source products.</p>
       </div>
 
-      <div className="background--dark-gradient-radial">
+      <div className="background--dark-purple">
         <div className="max-width content-padding pad-vertical">
           <h2 className="header-xl text--center mobile-squish-md">Open Source is Critical for Digital Health</h2>
         </div>
@@ -59,7 +81,7 @@ const Mission = () => (
         <p>With open source healthcare IT solutions, regions with limited resources that cannot afford expensive proprietary solutions will still have options for quality software to help them deliver quality care.<a href="#references"><sup>4</sup></a> Most importantly, the open source model is consistent with the healthcare philosophy of sharing best practices and innovations in care delivery<a href="#references"><sup>3</sup></a> to improve health &mdash; with benefits for individual patients, as well as the entire population.</p>
       </div>
 
-      <div className="background--dark-gradient-radial">
+      <div className="background--dark-purple">
         <div className="max-width content-padding pad-vertical">
           <p>The problem is...</p>
           <h2 className="header-xl">Open Source is Under Attack</h2>

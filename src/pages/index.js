@@ -9,18 +9,17 @@ import spotlightItems from '../data/article-spotlight-order'
 const IndexPage = () => (
   <Layout>
     <div className="hero-container">
-      <div className="hero hero--fixed hero--home hidden--sm"><Hero hero="open-source-home.png" /></div>
-      <div className="hero hero--fixed hero--home hidden--md"><Hero hero="open-source-home-mobile.jpg" /></div>
+      <div className="hero hero--fixed hero--home"><Hero hero="open-source-dark.jpg" /></div>
     </div>
 
     <div className="max-width content-padding pad-vertical header-padding">
       <div className="header-container header-container--home">
-        <h1 className="text--center mobile-squish-sm">We demand <span className="text--red"> open source </span> healthcare</h1>
-        <h2 className="text--center mobile-squish-sm header-xl">We must set healthcare free</h2>
+        <h1 className="text--center mobile-squish-sm text--white">We demand <span className="text--red"> open source </span> healthcare</h1>
+        <h2 className="text--center mobile-squish-sm header-xl  text--white">We must set healthcare free</h2>
       </div>
     </div>
 
-    <div className="open-source-is background--dark-gradient-linear-transparent">
+    <div className="open-source-is">
       <div className="max-width content-padding pad-vertical pad-top--double header-padding">
 
         <div className="mission-home text--white">
@@ -39,6 +38,7 @@ const IndexPage = () => (
 
     <div className="content">
       <div className="max-width content-padding pad-vertical">
+        <h3 className="text--center">Healthcare is too important to be closed.</h3>
         <div className="reasons">
           <div className="reason">
             <p>We have open standards <br/>for finance,</p>
@@ -53,11 +53,6 @@ const IndexPage = () => (
             <p>because <strong>our lives depend on it</strong>.</p>
           </div>
         </div>
-      </div>
-
-      <div className="max-width content-padding pad-vertical">
-        <h3>Healthcare is too important to be closed.</h3>
-        <p>Our healthcare services need to be open. We are working towards an open source future to drive better healthcare for all.</p>
       </div>
 
       <div className="max-width content-padding pad-vertical">
@@ -124,16 +119,26 @@ const IndexPage = () => (
           <div class="projects-chunk">
             <h3>OS Projects</h3>
             <ul className="no-ul">
-              <li>openAutism.org</li>
-              <li>healthPicture.org</li>
-              <li><Link to="http://standardhealthrecord.org/" rel="noopener noreferrer" target="_blank">standardhealthrecord.org</Link></li>
-              <li><Link to="http://inspiredehrs.org" rel="noopener noreferrer" target="_blank">InspiredEHRs.org</Link></li>
+              <li><a href="https://openautism.github.io/" rel="noopener noreferrer" target="_blank">openAutism</a></li>
+              <li><a href="http://opensourcetimeline.com" rel="noopener noreferrer" target="_blank">Open source Timeline</a></li>
+              <li><a href="http://datauseagreement.org">Patient Data Manager</a></li>
+              <li><a href="http://standardhealthrecord.org/" rel="noopener noreferrer" target="_blank">standardhealthrecord.org</a></li>
+              <li><a href="http://inspiredehrs.org" rel="noopener noreferrer" target="_blank">InspiredEHRs.org</a></li>
             </ul>
           </div>
 
           <div className="projects-chunk">
             <h3>Clients</h3>
-            <p>AHRQ, HHS, CMS, NIH, California Healthcare Foundation, State of MAssachusetts, MITRE, Walgreens</p>
+            <ul className="no-ul">
+              <li>AHRQ</li>
+              <li>HHS</li>
+              <li>CMS</li>
+              <li>NIH</li>
+              <li>California Healthcare Foundation</li>
+              <li>State of Massachusetts</li>
+              <li>MITRE</li>
+              <li>Walgreens</li>
+            </ul>
             <div className="button-container">
               <div class="button-mask button-mask--primary">
                 <span class="mask"><Link to="/contact/">Get in touch</Link></span>

@@ -23,10 +23,10 @@ const Mission = () => (
     </div>
 
     <div className="content">
-      <div className="background--dark-purple text--white">
+      <div className="background--dark-purple">
         <div className="max-width content-padding pad-vertical">
           <h2 className="header-xl">OS Healthcare Missionette</h2>
-          <p>Corporate healthcare is killing us.</p>
+          <p>We’re fucked.</p>
 
           <p>We’re dying younger,<br/>
             maternal mortality is ticking up,<br/>

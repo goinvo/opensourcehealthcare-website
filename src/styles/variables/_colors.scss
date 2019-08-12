@@ -28,6 +28,7 @@
    }
    &--dark-purple {
       background: $color-dark-purple;
+      color: $color-white;
    }
    &--dark-gradient-linear {
      background: linear-gradient(to bottom, #ffffff 0%,#4f5050 35%,#242929 99%);

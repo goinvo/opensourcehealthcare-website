@@ -76,7 +76,7 @@ Once the HealthOS is launched, network effects kick in to jumpstart the largest 
 
 As the modern successor to the Hippocratic Oath, the Declaration of Geneva states:
 
-“I will share my medical knowledge for the benefit of the patient and the advancement of healthcare.”
+**“I will share my medical knowledge for the benefit of the patient and the advancement of healthcare.”**
 
 As software and medicine become more inseparable, we must view code as medical knowledge. Therefore, we have the moral & ethical obligations to open source our innovations with the world.
 

@@ -69,13 +69,13 @@ $ git clone https://github.com/goinvo/opensourcehealthcare.git
 
 ```bash
 $ cd opensourcehealthcare
-$ yarn
+$ npm install
 ```
 
 ### Start it up
 
 ```bash
-$ yarn develop
+$ gatsby develop
 ```
 
 Give it a few seconds, and then head on over to [http://localhost:8000/](http://localhost:8000/) and you should see your instance of the working website.
@@ -83,7 +83,7 @@ Give it a few seconds, and then head on over to [http://localhost:8000/](http://
 ### Deployment
 
 ```bash
-$ yarn build
+$ gatsby build
 ```
 
 When you push to master, netlify will auto-deploy the site.
@@ -94,7 +94,7 @@ When you push to master, netlify will auto-deploy the site.
 
 Export your image (Photoshop example steps):
 
-- Make sure your image is at 72 dpi, and at least 2000px wide (especially for 100% width images)
+- Make sure your image is at 72 dpi, and at least 1200px wide (especially for 100% width images)
 - Select 'File' > 'Save As'.
 - Name the image appropriately using all lowercase letters, numbers, and dashes (that means don't use uppercase or underscores, etc).
 - Use the 'JPEG' format (or 'PNG' if transparency is required), and click 'Save'.

@@ -11,7 +11,7 @@ metaDescription: ''
 
 ---
 
-Brennen Hodge is
+Brennen Hodge is CEO at Citizen Health, an entrepreneur on a mission to make the world a better place.
 
 ---
 ## It's time we drop the "E" in ~~"Electronic"~~ Medical Record.

@@ -73,7 +73,7 @@ class ArticleLayout extends Component {
                   ),
                   h2: ({ children, ...props }) => (
                     <h2
-                      className="header--xl"
+                      className="header--xl text--bold margin-top--double"
                       {...props}
                     >
                       {children}
@@ -90,14 +90,19 @@ class ArticleLayout extends Component {
                     </h4>
                   ),
                   p: ({ children, ...props }) => (
-                    <p className="margin-bottom--double">
+                    <p className="margin-bottom margin-top">
                       {children}
                     </p>
                   ),
                   ul: ({ children, ...props }) => (
-                    <ul className="ul margin-top--none margin-bottom--double">
+                    <ul className="ul margin-top--none margin-bottom">
                       {children}
                     </ul>
+                  ),
+                  ol: ({ children, ...props }) => (
+                    <ol className="ol margin-top--none margin-bottom">
+                      {children}
+                    </ol>
                   ),
                   img: ({ children, ...props}) => (
                     <MyImage filename={children} {...props} />

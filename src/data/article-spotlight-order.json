@@ -12,5 +12,12 @@
     "link": "/articles/patient-payer-consumer-citizen",
     "hero": "carecard-knowthecost.jpg",
     "author": "Jane Sarasohn-Kahn"
+  },
+  {
+    "id": "health-operating-system",
+    "title": "Health OS",
+    "link": "/articles/health-operating-system",
+    "hero": "carecard-knowthecost.jpg",
+    "author": "Brennan Hodge"
   }
 ]

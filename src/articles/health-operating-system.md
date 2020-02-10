@@ -15,13 +15,11 @@ Brennen Hodge is CEO at Citizen Health, an entrepreneur on a mission to make the
 
 ---
 
-<div class="spacer"></div><div class="spacer"></div>
+<div class="spacer"></div>
 
 ## It's time we drop the "E" in ~~"Electronic"~~ Medical Record.
-
 ## Then let's drop the ~~"Medical Record"~~ part.
-
-## **Now we start over.**
+## Now we start over.
 
 <div class="spacer"></div>
 
@@ -84,6 +82,6 @@ As software and medicine become more inseparable, we must view code as medical k
 
 It's time we take collective action and join forces to build the infrastructure our future healthcare systems need. By leveraging open source software and communities, we can solve problems in healthcare faster and cheaper. We must align vectors to achieve maximum impact and progress.
 
-## **So the question is, who wants to help build the open source HealthOS?**
+## So the question is, who wants to help build the open source HealthOS?
 
 <div class="spacer"></div>

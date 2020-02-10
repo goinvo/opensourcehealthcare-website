@@ -73,7 +73,7 @@ class ArticleLayout extends Component {
                   ),
                   h2: ({ children, ...props }) => (
                     <h2
-                      className="header--xl"
+                      className="header--xl text--bold margin-top--double"
                       {...props}
                     >
                       {children}

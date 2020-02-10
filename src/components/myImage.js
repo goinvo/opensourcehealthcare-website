@@ -12,7 +12,7 @@ const MyImage = (props) => (
               relativePath
               name
               childImageSharp {
-                sizes(maxWidth: 980) {
+                sizes(maxWidth: 1400) {
                   ...GatsbyImageSharpSizes
                 }
               }

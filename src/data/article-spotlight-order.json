@@ -19,5 +19,12 @@
     "link": "/articles/health-operating-system",
     "hero": "carecard-knowthecost.jpg",
     "author": "Brennan Hodge"
+  },
+  {
+    "id": "national-digital-healthcare-estonia",
+    "title": "National Digital Healthcare the Estonian Experience",
+    "link": "/articles/national-digital-healthcare-estonia",
+    "hero": "carecard-knowthecost.jpg",
+    "author": "Liis Hinsberg Shea"
   }
 ]

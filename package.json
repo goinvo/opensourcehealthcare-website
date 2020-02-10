@@ -9,8 +9,7 @@
     "@mdx-js/tag": "^0.15.6",
     "eslint-plugin-graphql": "^3.0.3",
     "express-graphql": "^0.7.1",
-    "gatsby": "^2.0.119",
-    "gatsby-cli": "^2.4.11",
+    "gatsby": "^2.19.14",
     "gatsby-image": "^2.0.29",
     "gatsby-mdx": "^0.2.0",
     "gatsby-plugin-manifest": "^2.0.17",
@@ -28,8 +27,8 @@
     "node-gyp": "^3.8.0",
     "node-sass": "^4.11.0",
     "prop-types": "^15.7.1",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
     "react-mailto": "^0.4.0",
     "react-redux": "^5.1.0",
@@ -46,5 +45,8 @@
     "serve": "gatsby serve",
     "debug": "gatsby --help",
     "clean": "gatsby clean"
+  },
+  "devDependencies": {
+    "gatsby-cli": "^2.8.29"
   }
 }

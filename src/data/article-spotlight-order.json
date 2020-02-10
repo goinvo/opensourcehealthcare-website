@@ -12,5 +12,19 @@
     "link": "/articles/patient-payer-consumer-citizen",
     "hero": "carecard-knowthecost.jpg",
     "author": "Jane Sarasohn-Kahn"
+  },
+  {
+    "id": "health-operating-system",
+    "title": "Health OS",
+    "link": "/articles/health-operating-system",
+    "hero": "carecard-knowthecost.jpg",
+    "author": "Brennan Hodge"
+  },
+  {
+    "id": "national-digital-healthcare-estonia",
+    "title": "National Digital Healthcare the Estonian Experience",
+    "link": "/articles/national-digital-healthcare-estonia",
+    "hero": "carecard-knowthecost.jpg",
+    "author": "Liis Hinsberg Shea"
   }
 ]

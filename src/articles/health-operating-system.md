@@ -11,7 +11,7 @@ metaDescription: ''
 
 ---
 
-Brennen Hodge is CEO at Citizen Health, an entrepreneur on a mission to make the world a better place. [brennenhodge.com](brennenhodge.com)
+Brennen Hodge is CEO at Citizen Health, an entrepreneur on a mission to make the world a better place. [brennenhodge.com](https://brennenhodge.com/)
 
 ---
 
